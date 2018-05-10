@@ -1,0 +1,159 @@
+2018-05-09 00:00:00,021 INFO  accmopiboss01 [] (: [  ] e i ) [com.oneandone.access.mobile.mss.exchange.sftp.SftpReceiver] (EJB timer-thread-pool - 5) JobMessageReceiverSftpConfigurationSp004Telefonica: getFileNamesFromFtp(..) (2 files) took 87ms
+2018-05-09 00:00:00,030 INFO  accmopiboss01 [] (: [  ] e i ) [com.oneandone.access.mobile.mss.exchange.sftp.SftpReceiver] (EJB timer-thread-pool - 5) JobMessageReceiverSftpConfigurationSp004Telefonica: lockFiles(..) (0/2 files) took 2ms
+2018-05-09 00:00:00,031 INFO  accmopiboss01 [] (: [  ] e i ) [com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor] (EJB timer-thread-pool - 5) SftpReceiverPollerSp004Telefonica execution finished
+2018-05-09 00:00:00,101 INFO  accmopiboss01 [] (: [  ] e i ) [com.oneandone.access.mobile.mss.exchange.sftp.SftpReceiver] (EJB timer-thread-pool - 4) JobMessageReceiverSftpConfigurationSp109Telefonica: getFileNamesFromFtp(..) (0 files) took 163ms
+2018-05-09 00:00:00,102 INFO  accmopiboss01 [] (: [  ] e i ) [com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor] (EJB timer-thread-pool - 4) SftpReceiverPollerSp109Telefonica execution finished
+2018-05-09 00:00:02,738 INFO  accmopiboss01 [] (: [  ] e i ) [com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor] (EJB timer-thread-pool - 3) JobManagerTimer execution finished
+2018-05-09 00:00:02,918 INFO  accmopiboss01 [] (: [  ] e i ) [com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor] (EJB timer-thread-pool - 4) JobManagerTimer execution started
+2018-05-09 00:00:02,933 INFO  accmopiboss01 [] (: [  ] e i ) [com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor] (EJB timer-thread-pool - 6) SftpReceiverPollerSp004Telefonica execution started
+2018-05-09 00:00:02,937 INFO  accmopiboss01 [] (: [  ] e i ) [com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor] (EJB timer-thread-pool - 9) SftpReceiverPollerSp109Telefonica execution started
+2018-05-09 00:00:02,944 INFO  accmopiboss01 [] (: [  ] e i ) [com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor] (EJB timer-thread-pool - 2) SftpReceiverPollerVodafone execution started
+2018-05-09 00:00:02,955 INFO  accmopiboss01 [] (: [  ] e i ) [com.oneandone.access.mobile.mss.exchange.sftp.SftpReceiver] (EJB timer-thread-pool - 2) JobMessageReceiverSftpConfigurationVodafone: getFileNamesFromFtp(..) (0 files) took 11ms
+2018-05-09 00:00:02,956 INFO  accmopiboss01 [] (: [  ] e i ) [com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor] (EJB timer-thread-pool - 2) SftpReceiverPollerVodafone execution finished
+2018-05-09 00:00:03,014 INFO  accmopiboss01 [] (: [  ] e i ) [com.oneandone.access.mobile.mss.exchange.sftp.SftpReceiver] (EJB timer-thread-pool - 6) JobMessageReceiverSftpConfigurationSp004Telefonica: getFileNamesFromFtp(..) (2 files) took 80ms
+2018-05-09 00:00:03,016 INFO  accmopiboss01 [] (: [  ] e i ) [com.oneandone.access.mobile.mss.exchange.sftp.SftpReceiver] (EJB timer-thread-pool - 6) JobMessageReceiverSftpConfigurationSp004Telefonica: lockFiles(..) (0/2 files) took 2ms
+2018-05-09 00:00:03,017 INFO  accmopiboss01 [] (: [  ] e i ) [com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor] (EJB timer-thread-pool - 6) SftpReceiverPollerSp004Telefonica execution finished
+2018-05-09 00:00:03,096 INFO  accmopiboss01 [] (: [  ] e i ) [com.oneandone.access.mobile.mss.exchange.sftp.SftpReceiver] (EJB timer-thread-pool - 9) JobMessageReceiverSftpConfigurationSp109Telefonica: getFileNamesFromFtp(..) (0 files) took 158ms
+2018-05-09 00:00:03,097 INFO  accmopiboss01 [] (: [  ] e i ) [com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor] (EJB timer-thread-pool - 9) SftpReceiverPollerSp109Telefonica execution finished
+2018-05-09 00:00:04,896 INFO  accmopiboss01 [] (: [  ] e i ) [com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor] (EJB timer-thread-pool - 7) PeriodicCheckTimer execution started
+2018-05-09 00:00:04,924 INFO  accmopiboss01 [] (: [  ] e i ) [com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor] (EJB timer-thread-pool - 6) SftpReceiverPollerVodafoneRoamingNotification execution started
+2018-05-09 00:00:05,102 INFO  accmopiboss01 [] (: [  ] e i ) [com.oneandone.access.mobile.mss.exchange.sftp.SftpReceiver] (EJB timer-thread-pool - 6) RoamingNotificationReceiverSftpConfigurationVodafone: getFileNamesFromFtp(..) (0 files) took 177ms
+
+2018-05-09 00:00:09,175 INFO  [               :                              ] message file with name 'SP004_1100127633468000_ACK.xml' has length zero, retrying later
+2018-05-09 00:00:09,176 INFO  [               :                              ] message file with name 'SP004_1100129776736000_REQ.xml_rejected_293' has length zero, retrying later
+2018-05-09 00:00:09,622 INFO  [1100129965110000:                              ] SENT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Order><Header dateOfExecution="2018-05-09 00:00:09" orderId="1100129965110000" status="" messageId="1" type="REQ" serviceProviderId="SP004"/><Body><Oli><OliControl oliId="1" subscriptionId="11001745775" accountId="11001745775"/><ACTSUB><Product contractDuration="0" productName="MBA Tariff" productCode="O2P3020" productCategory="MOB"><Option operation="ADD" optionType="SIM" optionId="O2O0014"><Attribute name="SIMType" value="3G SIMV2"/><Attribute name="SIMNumber" value="8949227181705978281"/></Option><Option operation="ADD" optionType="MSISDN" optionId="O2O0015"><Attribute name="MSISDNNumber" value="4915901786978"/><Attribute name="allocationSource" value="7"/></Option><Option operation="ADD" optionType="BarHardToReachNumbers" optionId="O2O3061"/><Option operation="ADD" optionType="AdditionalCounterCountryGroup" optionId="O2O3253"><Attribute name="ProfileIDWZ2" value="1180"/></Option><Option operation="ADD" optionType="FSK0" optionId="O2O0170"/><Option operation="ADD" optionType="International" optionId="O2O0089"/><Option operation="ADD" optionType="ConferenceCall" optionId="O2O2050"/><Option operation="ADD" optionType="UseNationalVolumeForEU" optionId="O2O3171" optionReference="O2O3171"/><Option operation="ADD" optionType="BarVasCharity" optionId="O2O3175"/><Option operation="ADD" optionType="RtiProfileVoice" optionId="O2O3056"><Attribute name="rtiProfileId" value="1387"/></Option><Option operation="ADD" optionType="BarVasApps" optionId="O2O3177"/><Option operation="ADD" optionType="BarVasAdult" optionId="O2O3176"/><Option operation="ADD" optionType="InternetUnlimitedRoW" optionId="O2O3181"><Attribute name="ProfileIdRoW" value="1188"/></Option><Option operation="ADD" optionType="RtiProfileData" optionId="O2O3057"><Attribute name="rtiProfileId" value="2452"/></Option><Option operation="ADD" optionType="APN_1" optionId="O2O3096" optionReference="O2O3096"><Attribute name="dataAutomatic" value="false"/><Attribute name="ProfileId" value="1128"/></Option><Option operation="ADD" optionType="BarPremiumInfoNumbers" optionId="O2O3060"/><Option operation="ADD" optionType="BarVasInformation" optionId="O2O3173"/><Option operation="ADD" optionType="BarEntertainmentNumbers" optionId="O2O0031"/><Option operation="ADD" optionType="BarVasTicketing" optionId="O2O3174"/><Option operation="ADD" optionType="BarPortalContent" optionId="O2O0132"/><Option operation="ADD" optionType="BarVasAbo" optionId="O2O3172"/><Option operation="ADD" optionType="BrandInformation" optionId="O2O3184"><Attribute name="brandId" value="118"/></Option></Product></ACTSUB></Oli></Body></Order>
+2018-05-09 00:00:21,150 INFO  [               :                              ] message file with name 'SP004_1100127633468000_ACK.xml' has length zero, retrying later
+2018-05-09 00:00:21,150 INFO  [               :                              ] message file with name 'SP004_1100129776736000_REQ.xml_rejected_293' has length zero, retrying later
+2018-05-09 00:00:30,170 INFO  [129965122_0    :                              ] SENT: UNA:+,? 'UNB+UNOA:1+MMO+D2PU+180509:0000+129965122_0'UNH+129965122_0+D2ACAN:1'XAK+CP49AA01'XNV+1523'XMS+2082163'XSD+AL++'UNT+6+129965122_0'UNZ+1+129965122_0'
+2018-05-09 00:00:30,188 INFO  [129965116_0    :                              ] SENT: UNA:+,? 'UNB+UNOA:1+MMO+D2PU+180509:0000+129965116_0'UNH+129965116_0+D2ACAN:1'XAK+CP49AA01'XNV+1523'XMS+2015752'XSD+AL++'UNT+6+129965116_0'UNZ+1+129965116_0'
+2018-05-09 00:00:30,224 INFO  [129965115_0    :                              ] SENT: UNA:+,? 'UNB+UNOA:1+MMO+D2PU+180509:0000+129965115_0'UNH+129965115_0+D2ACAN:1'XAK+CP49AA01'XNV+1523'XMS+3672303'XSD+AL++'UNT+6+129965115_0'UNZ+1+129965115_0'
+2018-05-09 00:00:36,215 INFO  [               :                              ] message file with name 'SP004_1100127633468000_ACK.xml' has length zero, retrying later
+2018-05-09 00:00:36,216 INFO  [               :                              ] message file with name 'SP004_1100129776736000_REQ.xml_rejected_293' has length zero, retrying later
+2018-05-09 00:00:42,159 INFO  [               :                              ] message file with name 'SP004_1100127633468000_ACK.xml' has length zero, retrying later
+
+2018-05-09 00:05:08,344 INFO  [1100129965279000:                              ] SENT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Order><Header dateOfExecution="2018-05-09 00:05:08" orderId="1100129965279000" status="" messageId="1" type="REQ" serviceProviderId="SP004"/><Body><Oli><OliControl oliId="1" subscriptionId="11001740541" accountId="11001740541"/><MIGOPT><MigratedOptions><Option operation="CHG" optionType="MSISDN" optionId="O2O0015"><Attribute name="MSISDNNumber" value="4915253193007"/><Attribute name="allocationSource" value="5"/><Attribute name="donatingNO" value="D2"/><Attribute name="donatingSP" value="1UN1"/><Attribute name="recipientNO" value="O2"/><Attribute name="confirmedPortingDate" value="2018-05-16 00:00:00"/></Option></MigratedOptions></MIGOPT></Oli></Body></Order>
+2018-05-09 00:05:11,274 INFO  [1100129965299000:                              ] SENT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Order><Header dateOfExecution="2018-05-09 00:05:11" orderId="1100129965299000" status="" messageId="1" type="REQ" serviceProviderId="SP004"/><Body><Oli><OliControl oliId="1" subscriptionId="11001737282" accountId="11001737282"/><MIGOPT><MigratedOptions><Option operation="CHG" optionType="MSISDN" optionId="O2O0015"><Attribute name="MSISDNNumber" value="4915253840270"/><Attribute name="allocationSource" value="5"/><Attribute name="donatingNO" value="D2"/><Attribute name="donatingSP" value="1UN1"/><Attribute name="recipientNO" value="O2"/><Attribute name="confirmedPortingDate" value="2018-05-16 00:00:00"/></Option></MigratedOptions></MIGOPT></Oli></Body></Order>
+2018-05-09 00:05:11,281 INFO  [1100129965302000:                              ] SENT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Order><Header dateOfExecution="2018-05-09 00:05:11" orderId="1100129965302000" status="" messageId="1" type="REQ" serviceProviderId="SP004"/><Body><Oli><OliControl oliId="1" subscriptionId="11001745379" accountId="11001745379"/><MIGOPT><MigratedOptions><Option operation="CHG" optionType="MSISDN" optionId="O2O0015"><Attribute name="MSISDNNumber" value="491773430486"/><Attribute name="allocationSource" value="5"/><Attribute name="donatingNO" value="D2"/><Attribute name="donatingSP" value="1UN1"/><Attribute name="recipientNO" value="O2"/><Attribute name="confirmedPortingDate" value="2018-05-17 00:00:00"/></Option></MigratedOptions></MIGOPT></Oli></Body></Order>
+2018-05-09 00:05:11,283 INFO  [1100129965300000:                              ] SENT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Order><Header dateOfExecution="2018-05-09 00:05:11" orderId="1100129965300000" status="" messageId="1" type="REQ" serviceProviderId="SP004"/><Body><Oli><OliControl oliId="1" subscriptionId="11001736891" accountId="11001736891"/><MIGOPT><MigratedOptions><Option operation="CHG" optionType="MSISDN" optionId="O2O0015"><Attribute name="MSISDNNumber" value="491738282027"/><Attribute name="allocationSource" value="5"/><Attribute name="donatingNO" value="D2"/><Attribute name="donatingSP" value="1UN1"/><Attribute name="recipientNO" value="O2"/><Attribute name="confirmedPortingDate" value="2018-05-16 00:00:00"/></Option></MigratedOptions></MIGOPT></Oli></Body></Order>
+2018-05-09 00:05:11,290 INFO  [1100129965301000:                              ] SENT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Order><Header dateOfExecution="2018-05-09 00:05:11" orderId="1100129965301000" status="" messageId="1" type="REQ" serviceProviderId="SP004"/><Body><Oli><OliControl oliId="1" subscriptionId="11001737459" accountId="11001737459"/><MIGOPT><MigratedOptions><Option operation="CHG" optionType="MSISDN" optionId="O2O0015"><Attribute name="MSISDNNumber" value="4917624432890"/><Attribute name="allocationSource" value="5"/><Attribute name="donatingNO" value="D2"/><Attribute name="donatingSP" value="1UN1"/><Attribute name="recipientNO" value="O2"/><Attribute name="confirmedPortingDate" value="2018-05-16 00:00:00"/></Option></MigratedOptions></MIGOPT></Oli></Body></Order>
+
+2018-05-09 00:09:20,440 INFO  accmopiboss01 [com.oneandone.access.mobile.x400gateway.connector.X400FtpConnectorImpl] (EJB timer-thre
+ad-pool - 5) Message from file: 1UN1YY00000104787297.bua has been sent. See payload:
+$submit infobase: sentfolder
+impdu::
+  impdu_heading::
+    originator::
+      x400f1::
+        country: DE
+        admd: viaT
+        organization: 1+1-Internet-AG
+        personal_name::
+          surname: 1+1-Mobilfunk
+        end
+      end
+    end
+    primary_recipients::
+      x400f1::
+        country: DE
+        admd: VIAT
+        organization: O2-Germany
+        personal_name::
+          surname: MNP
+        end
+      end
+    end
+    subject: MNPAnfr;4917684339819;1UN1YY00000104787297;1UN1;O2DE
+  end
+  impdu_body::
+    text:<?xml version="1.0" encoding="ISO-8859-1"?>
+<MNPAnfr>
+  <Portier-ID>1UN1YY00000104787297</Portier-ID>
+  <Version>02.00</Version>
+  <RufNr>4917684339819</RufNr>
+  <NBauf>O2</NBauf>
+  <DAab>O2DE</DAab>
+  <DAauf>1UN1</DAauf>
+  <Portier-Termin>
+    <VTEN>VTEN</VTEN>
+  </Portier-Termin>
+  <Freitext/>
+  <Kunden-info>
+    <Privatkunde>
+      <Name>Worrech</Name>
+      <Vorname>Sarah</Vorname>
+      <Geburtsdatum>1983-08-06</Geburtsdatum>
+    </Privatkunde>
+  </Kunden-info>
+</MNPAnfr>
+    eotext
+  end
+end
+$exit
+
+2018-05-09 00:09:20,521 INFO  accmopiboss01 [com.oneandone.access.mobile.x400gateway.connector.X400FtpConnectorImpl] (EJB timer-thread-pool - 1) Result Null beim X400FtpConnectorImpl.listIncomingFileNames. Returning empty file list.
+2018-05-09 00:09:30,158 INFO  accmopiboss01 [com.oneandone.access.mobile.x400gateway.connector.X400FtpConnectorImpl] (pool-1380221-thread-5) List Files geladen: Length:0
+2018-05-09 00:09:40,141 INFO  accmopiboss01 [com.oneandone.access.mobile.x400gateway.connector.X400FtpConnectorImpl] (pool-1380224-thread-5) List Files geladen: Length:0
+2018-05-09 00:09:40,366 INFO  accmopiboss01 [com.oneandone.access.mobile.x400gateway.connector.X400FtpConnectorImpl] (EJB timer-thread-pool - 9) Message from file: 20180509-000940.bua has been sent. See payload:
+2018-05-09 00:09:40,366 INFO  accmopiboss01 [com.oneandone.access.mobile.x400gateway.connector.X400FtpConnectorImpl] (EJB timer-thread-pool - 9) Message from file: 20180509-000940.bua has been sent. See payload:
+$fetch infobase:infolder entry_status:new
+$exit
+2018-05-09 00:09:40,466 INFO  accmopiboss01 [com.oneandone.access.mobile.x400gateway.connector.X400FtpConnectorImpl] (EJB timer-thread-pool - 9) Result Null beim X400FtpConnectorImpl.listIncomingFileNames. Returning empty file list.
+2018-05-09 00:09:50,043 WARN  accmopiboss01 [com.oneandone.swistec.platform.client.servicelocate.security.LoginHandler] (EJB default - 5) Could not determine security properties. No security will be configured. The error message was: No jpc.properties file found in application deployment
+2018-05-09 00:09:50,048 WARN  accmopiboss01 [com.oneandone.swistec.platform.client.servicelocate.security.LoginHandler] (EJB default - 5) Could not determine security properties. No security will be configured. The error message was: No jpc.properties file found in application deployment
+2018-05-09 00:09:50,050 WARN  accmopiboss01 [com.oneandone.swistec.platform.client.servicelocate.security.LoginHandler] (EJB default - 5) Could not determine security properties. No security will be configured. The error message was: No jpc.properties file found in application deployment
+2018-05-09 00:09:50,054 WARN  accmopiboss01 [com.oneandone.swistec.platform.client.servicelocate.security.LoginHandler] (EJB default - 5) Could not determine security properties. No security will be configured. The error message was: No jpc.properties file found in application deployment
+2018-05-09 00:09:50,055 INFO  accmopiboss01 [com.oneandone.access.mobile.x400gateway.core.X400GatewayImpl] (EJB default - 5) call sendInPortingRequest(phoneNumber=491638024219, serviceProviderCode=O2DE, networkProviderCode=O2, customerInfo=Maike Jan?en-van Hoof 1977-11-13 00:00:00.0, portingType=END_OF_CONTRACT, freetext=null, correlationId=902ad9d1-2979-4b37-9844-fbae7a6a63fd, clientId=SEND_MNPIN_QUERY_4_0) returns 1UN1YY00000104787302 [duration=14ms]
+2018-05-09 00:09:50,109 INFO  accmopiboss01 [com.oneandone.access.mobile.x400gateway.connector.X400FtpConnectorImpl] (pool-1380226-thread-5) List Files geladen: Length:0
+2018-05-09 00:10:00,140 INFO  accmopiboss01 [com.oneandone.access.mobile.x400gateway.connector.X400FtpConnectorImpl] (pool-1380229-thread-5) List Files geladen: Length:0
+2018-05-09 00:00:12,918 WARN  [accmopiboss01] [org.jboss.as.ejb3] (EJB timer-thread-pool - 2) JBAS014143: Timer 67fd83a5-3bae-4e15-95e2-a0ade07e2ab6 is still active, skipping overlapping scheduled execution at: Wed May 09 00:00:12 CEST 2018
+2018-05-09 00:00:13,757 WARN  [accmopiboss01] [org.jboss.as.ejb3] (EJB timer-thread-pool - 9) JBAS014143: Timer 34ccee91-6a0e-41a8-a8d3-e1c4098b8390 is still active, skipping overlapping scheduled execution at: Wed May 09 00:00:13 CEST 2018
+2018-05-09 00:00:13,918 WARN  [accmopiboss01] [org.jboss.as.ejb3] (EJB timer-thread-pool - 4) JBAS014143: Timer 67fd83a5-3bae-4e15-95e2-a0ade07e2ab6 is still active, skipping overlapping scheduled execution at: Wed May 09 00:00:13 CEST 2018
+2018-05-09 00:00:14,757 WARN  [accmopiboss01] [org.jboss.as.ejb3] (EJB timer-thread-pool - 3) JBAS014143: Timer 34ccee91-6a0e-41a8-a8d3-e1c4098b8390 is still active, skipping overlapping scheduled execution at: Wed May 09 00:00:14 CEST 2018
+2018-05-09 00:00:14,918 WARN  [accmopiboss01] [org.jboss.as.ejb3] (EJB timer-thread-pool - 1) JBAS014143: Timer 67fd83a5-3bae-4e15-95e2-a0ade07e2ab6 is still active, skipping overlapping scheduled execution at: Wed May 09 00:00:14 CEST 2018
+2018-05-09 00:00:15,757 WARN  [accmopiboss01] [org.jboss.as.ejb3] (EJB timer-thread-pool - 1) JBAS014143: Timer 34ccee91-6a0e-41a8-a8d3-e1c4098b8390 is still active, skipping overlapping scheduled execution at: Wed May 09 00:00:15 CEST 2018
+2018-05-09 00:00:15,918 WARN  [accmopiboss01] [org.jboss.as.ejb3] (EJB timer-thread-pool - 4) JBAS014143: Timer 67fd83a5-3bae-4e15-95e2-a0ade07e2ab6 is still active, skipping overlapping scheduled execution at: Wed May 09 00:00:15 CEST 2018
+2018-05-09 00:00:16,757 WARN  [accmopiboss01] [org.jboss.as.ejb3] (EJB timer-thread-pool - 6) JBAS014143: Timer 34ccee91-6a0e-41a8-a8d3-e1c4098b8390 is still active, skipping overlapping scheduled execution at: Wed May 09 00:00:16 CEST 2018
+2018-05-09 00:00:16,918 WARN  [accmopiboss01] [org.jboss.as.ejb3] (EJB timer-thread-pool - 7) JBAS014143: Timer 67fd83a5-3bae-4e15-95e2-a0ade07e2ab6 is still active, skipping overlapping scheduled execution at: Wed May 09 00:00:16 CEST 2018
+2018-05-09 00:00:17,760 WARN  [accmopiboss01] [org.jboss.as.ejb3] (EJB timer-thread-pool - 4) JBAS014143: Timer 34ccee91-6a0e-41a8-a8d3-e1c4098b8390 is still active, skipping overlapping scheduled execution at: Wed May 09 00:00:17 CEST 2018
+2018-05-09 00:00:17,918 WARN  [accmopiboss01] [org.jboss.as.ejb3] (EJB timer-thread-pool - 3) JBAS014143: Timer 67fd83a5-3bae-4e15-95e2-a0ade07e2ab6 is still active, skipping overlapping scheduled execution at: Wed May 09 00:00:17 CEST 2018
+2018-05-09 00:00:18,757 WARN  [accmopiboss01] [org.jboss.as.ejb3] (EJB timer-thread-pool - 4) JBAS014143: Timer 34ccee91-6a0e-41a8-a8d3-e1c4098b8390 is still active, skipping overlapping scheduled execution at: Wed May 09 00:00:18 CEST 2018
+2018-05-09 00:00:18,918 WARN  [accmopiboss01] [org.jboss.as.ejb3] (EJB timer-thread-pool - 3) JBAS014143: Timer 67fd83a5-3bae-4e15-95e2-a0ade07e2ab6 is still active, skipping overlapping scheduled execution at: Wed May 09 00:00:18 CEST 2018
+2018-05-09 00:00:19,758 WARN  [accmopiboss01] [org.jboss.as.ejb3] (EJB timer-thread-pool - 9) JBAS014143: Timer 34ccee91-6a0e-41a8-a8d3-e1c4098b8390 is still active, skipping overlapping scheduled execution at: Wed May 09 00:00:19 CEST 2018
+
+
+2018-05-09 02:24:39,635 WARN  accmopiboss01 [1.0.119] (70f2c7ea-58eb-4750-a0ba-6545e04c86ce: [SIM_SWAP2_PROCESS 2.0 ] e i1388590 D2) [SftpLogger] (EJB async-thread-pool - 12) Permanently added '139.7.246.76' (RSA) to the list of known hosts.
+2018-05-09 02:32:51,699 WARN  accmopiboss01 [1.0.119] (PSS#SUBSCRIBER_DELETE#0f1a5f08-7992-4b19-b869-18620b669c75: [MOBILE_CANCELLATION_PROCESS 1.0 ] e i1870122 D2) [SftpLogger] (EJB async-thread-pool - 5) Permanently added '139.7.246.76' (RSA) to the list of known hosts.
+2018-05-09 02:33:00,551 WARN  accmopiboss01 [1.0.119] (PSS#SUBSCRIBER_DELETE#a9664451-8123-4986-9bae-27f5899d816f: [MOBILE_CANCELLATION_PROCESS 1.0 ] e i4044341 D2) [SftpLogger] (EJB async-thread-pool - 10) Permanently added '139.7.246.76' (RSA) to the list of known hosts.
+2018-05-09 02:42:06,676 WARN  accmopiboss01 [1.0.119] (1f5e4e43-8857-4f86-b206-3a79a608c97c: [mobileSupportAPI 2.3 ] e i1322187 D2) [SftpLogger] (EJB async-thread-pool - 10) Permanently added '139.7.246.76' (RSA) to the list of known hosts.
+2018-05-09 02:48:42,371 WARN  accmopiboss01 [1.0.119] (PSS#SUBSCRIBER_DELETE#1f72900a-3062-43a1-a000-8f1e399305db: [MOBILE_CANCELLATION_PROCESS 1.0 ] e i11844654 D2) [SftpLogger] (EJB async-thread-pool - 1) Permanently added '139.7.246.76' (RSA) to the list of known hosts.
+2018-05-09 02:48:49,867 WARN  accmopiboss01 [1.0.119] (PSS#SUBSCRIBER_DELETE#e61bcc08-b15f-42f8-bb25-90dc88bf12e9: [MOBILE_CANCELLATION_PROCESS 1.0 ] e i11925011 D2) [SftpLogger] (EJB async-thread-pool - 7) Permanently added '139.7.246.76' (RSA) to the list of known hosts.
+2018-05-09 02:56:30,488 WARN  accmopiboss01 [1.0.119] (176015f4-71bc-4681-8ef9-a3615fc6deb7: [mobileSupportAPI 2.3 ] e i11808793 D2) [SftpLogger] (EJB async-thread-pool - 7) Permanently added '139.7.246.76' (RSA) to the list of known hosts.
+2018-05-09 03:03:52,347 WARN  accmopiboss01 [1.0.119] (PSS#SUBSCRIBER_DELETE#dc27f25d-a326-47a8-a8cb-0e6b10e63b9b: [MOBILE_CANCELLATION_PROCESS 1.0 ] e i774753 D2) [SftpLogger] (EJB async-thread-pool - 9) Permanently added '139.7.246.76' (RSA) to the list of known hosts.
+2018-05-09 03:04:22,668 WARN  accmopiboss01 [1.0.119] (PSS#SUBSCRIBER_DELETE#47c759ad-52f3-48db-86a9-0141b2b04e83: [MOBILE_CANCELLATION_PROCESS 1.0 ] e i3138814 D2) [SftpLogger] (EJB async-thread-pool - 11) Permanently added '139.7.246.76' (RSA) to the list of known hosts.
+2018-05-09 03:18:58,713 WARN  accmopiboss01 [1.0.119] (PSS#SUBSCRIBER_DELETE#140d0730-9030-4462-bb3a-8f626a1e6b48: [MOBILE_CANCELLATION_PROCESS 1.0 ] e i11853856 D2) [SftpLogger] (EJB async-thread-pool - 12) Permanently added '139.7.246.76' (RSA) to the list of known hosts.
+2018-05-09 03:19:02,074 WARN  accmopiboss01 [1.0.119] (PSS#SUBSCRIBER_DELETE#825b0c43-db1f-4733-99df-82d8713791b8: [MOBILE_CANCELLATION_PROCESS 1.0 ] e i710705 D2) [SftpLogger] (EJB async-thread-pool - 9) Permanently added '139.7.246.76' (RSA) to the list of known hosts.
+2018-05-09 03:34:17,000 WARN  accmopiboss01 [1.0.119] (PSS#SUBSCRIBER_DELETE#fdd5a59a-0151-48b8-94f6-e660424e79ec: [MOBILE_CANCELLATION_PROCESS 1.0 ] e i2869310 D2) [SftpLogger] (EJB async-thread-pool - 7) Permanently added '139.7.246.76' (RSA) to the list of known hosts.
+
+2018-05-09 02:32:03,949 DEBUG [accmopiboss01] [com.oneandone.infrro.spp.timers.timers_subsystem.jobs.QuartzJobAdapter] (mssScheduler_Worker-1) starting job SftpHousekeepingSp109TelefonicaScheduler_1_0
+2018-05-09 02:32:03,949 DEBUG [accmopiboss01] [com.oneandone.infrro.spp.timers.timers_subsystem.jobs.EventInvoker] (QuartzJobAdapter-Thread) invoking mss-job-management-v1.0.war.com.oneandone.access.mobile.mss.scheduler.impl.SftpHousekeepingSp109TelefonicaScheduler
+2018-05-09 02:32:05,037 DEBUG [accmopiboss01] [com.oneandone.infrro.spp.timers.timers_subsystem.jobs.EventInvoker] (QuartzJobAdapter-Thread) finnished invoking mss-job-management-v1.0.war.com.oneandone.access.mobile.mss.scheduler.impl.SftpHousekeepingSp109TelefonicaScheduler
+2018-05-09 02:32:05,037 DEBUG [accmopiboss01] [com.oneandone.infrro.spp.timers.timers_subsystem.jobs.QuartzJobAdapter] (mssScheduler_Worker-1) done job invocation SftpHousekeepingSp109TelefonicaScheduler_1_0
+2018-05-09 02:42:03,794 DEBUG [accmopiboss01] [com.oneandone.infrro.spp.timers.timers_subsystem.jobs.QuartzJobAdapter] (mssScheduler_Worker-2) RemoveSubscriberScheduler_1_0 - Status OK
+2018-05-09 02:42:03,795 DEBUG [accmopiboss01] [com.oneandone.infrro.spp.timers.timers_subsystem.jobs.QuartzJobAdapter] (mssScheduler_Worker-2) starting job RemoveSubscriberScheduler_1_0
+2018-05-09 02:42:03,795 DEBUG [accmopiboss01] [com.oneandone.infrro.spp.timers.timers_subsystem.jobs.EventInvoker] (QuartzJobAdapter-Thread) invoking mss-job-management-v1.0.war.com.oneandone.access.mobile.mss.scheduler.impl.RemoveSubscriberScheduler
+2018-05-09 02:42:04,272 DEBUG [accmopiboss01] [com.oneandone.infrro.spp.timers.timers_subsystem.jobs.QuartzJobAdapter] (mssScheduler_Worker-3) SftpHousekeepingSp004TelefonicaScheduler_1_0 - Status OK
+2018-05-09 02:42:04,272 DEBUG [accmopiboss01] [com.oneandone.infrro.spp.timers.timers_subsystem.jobs.QuartzJobAdapter] (mssScheduler_Worker-3) starting job SftpHousekeepingSp004TelefonicaScheduler_1_0
+2018-05-09 02:42:04,272 DEBUG [accmopiboss01] [com.oneandone.infrro.spp.timers.timers_subsystem.jobs.EventInvoker] (QuartzJobAdapter-Thread) invoking mss-job-management-v1.0.war.com.oneandone.access.mobile.mss.scheduler.impl.SftpHousekeepingSp004TelefonicaScheduler
+2018-05-09 02:42:08,644 DEBUG [accmopiboss01] [com.oneandone.infrro.spp.timers.timers_subsystem.jobs.EventInvoker] (QuartzJobAdapter-Thread) finnished invoking mss-job-management-v1.0.war.com.oneandone.access.mobile.mss.scheduler.impl.SftpHousekeepingSp004TelefonicaScheduler
+2018-05-09 02:42:08,644 DEBUG [accmopiboss01] [com.oneandone.infrro.spp.timers.timers_subsystem.jobs.QuartzJobAdapter] (mssScheduler_Worker-3) done job invocation SftpHousekeepingSp004TelefonicaScheduler_1_0
+2018-05-09 02:45:32,554 DEBUG [accmopiboss01] [com.oneandone.infrro.spp.timers.timers_subsystem.jobs.EventInvoker] (QuartzJobAdapter-Thread) finnished invoking mss-job-management-v1.0.war.com.oneandone.access.mobile.mss.scheduler.impl.RemoveSubscriberScheduler
+2018-05-09 02:45:32,554 DEBUG [accmopiboss01] [com.oneandone.infrro.spp.timers.timers_subsystem.jobs.QuartzJobAdapter] (mssScheduler_Worker-2) done job invocation RemoveSubscriberScheduler_1_0
+2018-05-09 02:47:04,084 DEBUG [accmopiboss01] [com.oneandone.infrro.spp.timers.timers_subsystem.jobs.QuartzJobAdapter] (mssScheduler_Worker-1) SftpHousekeepingSp004TelefonicaScheduler_1_0 - Status OK
+2018-05-09 02:47:04,084 DEBUG [accmopiboss01] [com.oneandone.infrro.spp.timers.timers_subsystem.jobs.QuartzJobAdapter] (mssScheduler_Worker-1) starting job SftpHousekeepingSp004TelefonicaScheduler_1_0
+2018-05-09 02:47:04,084 DEBUG [accmopiboss01] [com.oneandone.infrro.spp.timers.timers_subsystem.jobs.EventInvoker] (QuartzJobAdapter-Thread) invoking mss-job-management-v1.0.war.com.oneandone.access.mobile.mss.scheduler.impl.SftpHousekeepingSp004TelefonicaScheduler
+2018-05-09 02:47:09,115 DEBUG [accmopiboss01] [com.oneandone.infrro.spp.timers.timers_subsystem.jobs.EventInvoker] (QuartzJobAdapter-Thread) finnished invoking mss-job-management-v1.0.war.com.oneandone.access.mobile.mss.scheduler.impl.SftpHousekeepingSp004TelefonicaScheduler
+
+
+
+
+
