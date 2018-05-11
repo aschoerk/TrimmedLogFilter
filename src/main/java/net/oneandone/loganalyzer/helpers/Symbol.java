@@ -8,6 +8,7 @@ public class Symbol {
     private final String text;
 
     public static enum Sym {
+        DATE, TIME, TIMESTAMP, GUID,
         LEVEL, SENTENCE, WORD,
         PATH,
         BIN_INTEGER_LITERAL,

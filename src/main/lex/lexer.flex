@@ -57,10 +57,20 @@ ClassOrPackagePath = {Word}(\.{Word})*
 
 Sentence = {Word} (({MiddleOfSentenceSeparator} | {WhiteSpace})+ {Word})+ ({EndOfSentenceSeparator}|LineTerminator)?
 
+OrderedDate = [12][0-9]{3}-[01][0-9]-[0-3][0-9]
+OrderedTime = [01][0-9]:[0-5][0-9]:[0-5][0-9]([.,][0-9]{3})?
+
+OrderedTimestamp = {OrderedDate}{WhiteSpace}{OrderedTime}
+
+StandardTimestamp = {OrderedDate}T{OrderedTime}([+-][01][0-9]:[0-9][0-9]|Z)?
+
+Timestamp = {OrderedTimestamp} | {StandardTimestamp}
 
 DecIntegerLiteral = 0 | [1-9][0-9]*
 BinIntegerLiteral = 0 | [1][0-1]*
 HexIntegerLiteral = 0 | [1-9a-fA-F][0-9a-fA-F]*
+
+Guid = [a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}
 
 
 %state YYINITIAL SENTENCE
@@ -70,11 +80,19 @@ HexIntegerLiteral = 0 | [1-9a-fA-F][0-9a-fA-F]*
 
 <YYINITIAL> {
 
-  {Level}   { return symbol(Sym.LEVEL); }
+  \[{Level}\]
+  | {Level}   { return symbol(Sym.LEVEL); }
 
   {Word} { sentence = new StringBuffer(yytext()); yybegin(SENTENCE); }
 
-  // {Sentence} { return symbol(Sym.SENTENCE); }
+  {OrderedDate}   { return symbol(Sym.DATE); }
+
+  {OrderedTime}   { return symbol(Sym.TIME); }
+
+  {Timestamp}  { return symbol(Sym.TIMESTAMP); }
+
+
+  {Guid} { return symbol(Sym.GUID); }
 
 
   {ClassOrPackagePath} { return symbol(Sym.PATH); }
@@ -96,6 +114,7 @@ HexIntegerLiteral = 0 | [1-9a-fA-F][0-9a-fA-F]*
    [^]
    ({EndOfSentenceSeparator}|LineTerminator)? {
             yybegin(YYINITIAL);
+            yypushback(yytext().length());
             return symbol(Sym.SENTENCE, sentence);
         }
 

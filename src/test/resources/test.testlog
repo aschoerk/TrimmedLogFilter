@@ -153,6 +153,2812 @@ $exit
 2018-05-09 02:47:04,084 DEBUG [accmopiboss01] [com.oneandone.infrro.spp.timers.timers_subsystem.jobs.EventInvoker] (QuartzJobAdapter-Thread) invoking mss-job-management-v1.0.war.com.oneandone.access.mobile.mss.scheduler.impl.SftpHousekeepingSp004TelefonicaScheduler
 2018-05-09 02:47:09,115 DEBUG [accmopiboss01] [com.oneandone.infrro.spp.timers.timers_subsystem.jobs.EventInvoker] (QuartzJobAdapter-Thread) finnished invoking mss-job-management-v1.0.war.com.oneandone.access.mobile.mss.scheduler.impl.SftpHousekeepingSp004TelefonicaScheduler
 
+2018-05-10T15:45:38+02:00
+
+2018-05-10T15:45:38.111+02:00
+2018-05-10T15:45:38.111Z
+2018-05-10T15:45:38,111+02:00
+2018-05-10T15:45:38,111Z
+2018-05-10T15:45:38Z
+
+
+/usr/lib/jvm/java-8-oracle/bin/java -Dmaven.multiModuleProjectDirectory=/home/aschoerk/projects/TrimmedLogFilter -Dmaven.home=/home/aschoerk/bin/idea-IU/plugins/maven/lib/maven3 -Dclassworlds.conf=/home/aschoerk/bin/idea-IU/plugins/maven/lib/maven3/bin/m2.conf -javaagent:/home/aschoerk/bin/idea-IU/lib/idea_rt.jar=38601:/home/aschoerk/bin/idea-IU/bin -Dfile.encoding=UTF-8 -classpath /home/aschoerk/bin/idea-IU/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar org.codehaus.classworlds.Launcher -Didea.version=2018.1.3 test -f pom.xml
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building net.oneandone loganalyzer 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- jflex-maven-plugin:1.6.1:generate (default) @ loganalyzer ---
+[INFO]   LogAnalyzerLexer.java is up to date.
+[INFO]
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ loganalyzer ---
+[INFO] Source directory: /home/aschoerk/projects/TrimmedLogFilter/target/generated-sources added.
+[INFO] Source directory: /home/aschoerk/projects/TrimmedLogFilter/src/main/java added.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ loganalyzer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/aschoerk/projects/TrimmedLogFilter/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ loganalyzer ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /home/aschoerk/projects/TrimmedLogFilter/target/classes
+[INFO]
+[INFO] --- kotlin-maven-plugin:1.2.41:compile (compile) @ loganalyzer ---
+[WARNING] No sources found skipping Kotlin compile
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ loganalyzer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ loganalyzer ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- kotlin-maven-plugin:1.2.41:test-compile (test-compile) @ loganalyzer ---
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ loganalyzer ---
+[INFO] Surefire report directory: /home/aschoerk/projects/TrimmedLogFilter/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.oneandone.loganalyzer.Test
+
+0: TIMESTAMP: 2018-05-09 00:00:00,021
+
+0: LEVEL: INFO
+
+0: SENTENCE: accmopiboss01
+[](:[]
+0: SENTENCE: e i
+)[
+0: PATH: com.oneandone.access.mobile.mss.exchange.sftp.SftpReceiver
+](
+0: SENTENCE: EJB timer-thread-pool
+-5)
+0: SENTENCE: JobMessageReceiverSftpConfigurationSp004Telefonica: getFileNamesFromFtp
+(..)(2
+0: SENTENCE: files
+)
+0: SENTENCE: took
+87
+1: SENTENCE: ms
+
+
+1: TIMESTAMP: 2018-05-09 00:00:00,030
+
+1: LEVEL: INFO
+
+1: SENTENCE: accmopiboss01
+[](:[]
+1: SENTENCE: e i
+)[
+1: PATH: com.oneandone.access.mobile.mss.exchange.sftp.SftpReceiver
+](
+1: SENTENCE: EJB timer-thread-pool
+-5)
+1: SENTENCE: JobMessageReceiverSftpConfigurationSp004Telefonica: lockFiles
+(..)(0/2
+1: SENTENCE: files
+)
+1: SENTENCE: took
+2
+2: SENTENCE: ms
+
+
+2: TIMESTAMP: 2018-05-09 00:00:00,031
+
+2: LEVEL: INFO
+
+2: SENTENCE: accmopiboss01
+[](:[]
+2: SENTENCE: e i
+)[
+2: PATH: com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor
+](
+2: SENTENCE: EJB timer-thread-pool
+-5)
+3: SENTENCE: SftpReceiverPollerSp004Telefonica execution finished
+
+
+3: TIMESTAMP: 2018-05-09 00:00:00,101
+
+3: LEVEL: INFO
+
+3: SENTENCE: accmopiboss01
+[](:[]
+3: SENTENCE: e i
+)[
+3: PATH: com.oneandone.access.mobile.mss.exchange.sftp.SftpReceiver
+](
+3: SENTENCE: EJB timer-thread-pool
+-4)
+3: SENTENCE: JobMessageReceiverSftpConfigurationSp109Telefonica: getFileNamesFromFtp
+(..)(0
+3: SENTENCE: files
+)
+3: SENTENCE: took
+163
+4: SENTENCE: ms
+
+
+4: TIMESTAMP: 2018-05-09 00:00:00,102
+
+4: LEVEL: INFO
+
+4: SENTENCE: accmopiboss01
+[](:[]
+4: SENTENCE: e i
+)[
+4: PATH: com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor
+](
+4: SENTENCE: EJB timer-thread-pool
+-4)
+5: SENTENCE: SftpReceiverPollerSp109Telefonica execution finished
+
+
+5: TIMESTAMP: 2018-05-09 00:00:02,738
+
+5: LEVEL: INFO
+
+5: SENTENCE: accmopiboss01
+[](:[]
+5: SENTENCE: e i
+)[
+5: PATH: com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor
+](
+5: SENTENCE: EJB timer-thread-pool
+-3)
+6: SENTENCE: JobManagerTimer execution finished
+
+
+6: TIMESTAMP: 2018-05-09 00:00:02,918
+
+6: LEVEL: INFO
+
+6: SENTENCE: accmopiboss01
+[](:[]
+6: SENTENCE: e i
+)[
+6: PATH: com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor
+](
+6: SENTENCE: EJB timer-thread-pool
+-4)
+7: SENTENCE: JobManagerTimer execution started
+
+
+7: TIMESTAMP: 2018-05-09 00:00:02,933
+
+7: LEVEL: INFO
+
+7: SENTENCE: accmopiboss01
+[](:[]
+7: SENTENCE: e i
+)[
+7: PATH: com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor
+](
+7: SENTENCE: EJB timer-thread-pool
+-6)
+8: SENTENCE: SftpReceiverPollerSp004Telefonica execution started
+
+
+8: TIMESTAMP: 2018-05-09 00:00:02,937
+
+8: LEVEL: INFO
+
+8: SENTENCE: accmopiboss01
+[](:[]
+8: SENTENCE: e i
+)[
+8: PATH: com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor
+](
+8: SENTENCE: EJB timer-thread-pool
+-9)
+9: SENTENCE: SftpReceiverPollerSp109Telefonica execution started
+
+
+9: TIMESTAMP: 2018-05-09 00:00:02,944
+
+9: LEVEL: INFO
+
+9: SENTENCE: accmopiboss01
+[](:[]
+9: SENTENCE: e i
+)[
+9: PATH: com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor
+](
+9: SENTENCE: EJB timer-thread-pool
+-2)
+10: SENTENCE: SftpReceiverPollerVodafone execution started
+
+
+10: TIMESTAMP: 2018-05-09 00:00:02,955
+
+10: LEVEL: INFO
+
+10: SENTENCE: accmopiboss01
+[](:[]
+10: SENTENCE: e i
+)[
+10: PATH: com.oneandone.access.mobile.mss.exchange.sftp.SftpReceiver
+](
+10: SENTENCE: EJB timer-thread-pool
+-2)
+10: SENTENCE: JobMessageReceiverSftpConfigurationVodafone: getFileNamesFromFtp
+(..)(0
+10: SENTENCE: files
+)
+10: SENTENCE: took
+11
+11: SENTENCE: ms
+
+
+11: TIMESTAMP: 2018-05-09 00:00:02,956
+
+11: LEVEL: INFO
+
+11: SENTENCE: accmopiboss01
+[](:[]
+11: SENTENCE: e i
+)[
+11: PATH: com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor
+](
+11: SENTENCE: EJB timer-thread-pool
+-2)
+12: SENTENCE: SftpReceiverPollerVodafone execution finished
+
+
+12: TIMESTAMP: 2018-05-09 00:00:03,014
+
+12: LEVEL: INFO
+
+12: SENTENCE: accmopiboss01
+[](:[]
+12: SENTENCE: e i
+)[
+12: PATH: com.oneandone.access.mobile.mss.exchange.sftp.SftpReceiver
+](
+12: SENTENCE: EJB timer-thread-pool
+-6)
+12: SENTENCE: JobMessageReceiverSftpConfigurationSp004Telefonica: getFileNamesFromFtp
+(..)(2
+12: SENTENCE: files
+)
+12: SENTENCE: took
+80
+13: SENTENCE: ms
+
+
+13: TIMESTAMP: 2018-05-09 00:00:03,016
+
+13: LEVEL: INFO
+
+13: SENTENCE: accmopiboss01
+[](:[]
+13: SENTENCE: e i
+)[
+13: PATH: com.oneandone.access.mobile.mss.exchange.sftp.SftpReceiver
+](
+13: SENTENCE: EJB timer-thread-pool
+-6)
+13: SENTENCE: JobMessageReceiverSftpConfigurationSp004Telefonica: lockFiles
+(..)(0/2
+13: SENTENCE: files
+)
+13: SENTENCE: took
+2
+14: SENTENCE: ms
+
+
+14: TIMESTAMP: 2018-05-09 00:00:03,017
+
+14: LEVEL: INFO
+
+14: SENTENCE: accmopiboss01
+[](:[]
+14: SENTENCE: e i
+)[
+14: PATH: com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor
+](
+14: SENTENCE: EJB timer-thread-pool
+-6)
+15: SENTENCE: SftpReceiverPollerSp004Telefonica execution finished
+
+
+15: TIMESTAMP: 2018-05-09 00:00:03,096
+
+15: LEVEL: INFO
+
+15: SENTENCE: accmopiboss01
+[](:[]
+15: SENTENCE: e i
+)[
+15: PATH: com.oneandone.access.mobile.mss.exchange.sftp.SftpReceiver
+](
+15: SENTENCE: EJB timer-thread-pool
+-9)
+15: SENTENCE: JobMessageReceiverSftpConfigurationSp109Telefonica: getFileNamesFromFtp
+(..)(0
+15: SENTENCE: files
+)
+15: SENTENCE: took
+158
+16: SENTENCE: ms
+
+
+16: TIMESTAMP: 2018-05-09 00:00:03,097
+
+16: LEVEL: INFO
+
+16: SENTENCE: accmopiboss01
+[](:[]
+16: SENTENCE: e i
+)[
+16: PATH: com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor
+](
+16: SENTENCE: EJB timer-thread-pool
+-9)
+17: SENTENCE: SftpReceiverPollerSp109Telefonica execution finished
+
+
+17: TIMESTAMP: 2018-05-09 00:00:04,896
+
+17: LEVEL: INFO
+
+17: SENTENCE: accmopiboss01
+[](:[]
+17: SENTENCE: e i
+)[
+17: PATH: com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor
+](
+17: SENTENCE: EJB timer-thread-pool
+-7)
+18: SENTENCE: PeriodicCheckTimer execution started
+
+
+18: TIMESTAMP: 2018-05-09 00:00:04,924
+
+18: LEVEL: INFO
+
+18: SENTENCE: accmopiboss01
+[](:[]
+18: SENTENCE: e i
+)[
+18: PATH: com.oneandone.access.mobile.mss.ejbtimer.EjbTimerExecutor
+](
+18: SENTENCE: EJB timer-thread-pool
+-6)
+19: SENTENCE: SftpReceiverPollerVodafoneRoamingNotification execution started
+
+
+19: TIMESTAMP: 2018-05-09 00:00:05,102
+
+19: LEVEL: INFO
+
+19: SENTENCE: accmopiboss01
+[](:[]
+19: SENTENCE: e i
+)[
+19: PATH: com.oneandone.access.mobile.mss.exchange.sftp.SftpReceiver
+](
+19: SENTENCE: EJB timer-thread-pool
+-6)
+19: SENTENCE: RoamingNotificationReceiverSftpConfigurationVodafone: getFileNamesFromFtp
+(..)(0
+19: SENTENCE: files
+)
+19: SENTENCE: took
+177
+21: SENTENCE: ms
+
+
+
+21: TIMESTAMP: 2018-05-09 00:00:09,175
+
+21: LEVEL: INFO
+[:]
+21: SENTENCE: message file with name
+'
+21: PATH: SP004_1100127633468000_ACK.xml
+'
+22: SENTENCE: has length zero, retrying later
+
+
+22: TIMESTAMP: 2018-05-09 00:00:09,176
+
+22: LEVEL: INFO
+[:]
+22: SENTENCE: message file with name
+'
+22: PATH: SP004_1100129776736000_REQ.xml_rejected_293
+'
+23: SENTENCE: has length zero, retrying later
+
+
+23: TIMESTAMP: 2018-05-09 00:00:09,622
+
+23: LEVEL: INFO
+[1100129965110000:]
+23: SENTENCE: SENT:
+<?
+23: SENTENCE: xml version
+="1.0"
+23: SENTENCE: encoding
+="
+23: SENTENCE: UTF-8
+"
+23: SENTENCE: standalone
+="
+23: SENTENCE: yes
+"?><
+23: SENTENCE: Order
+><
+23: SENTENCE: Header dateOfExecution
+="
+23: TIMESTAMP: 2018-05-09 00:00:09
+"
+23: SENTENCE: orderId
+="1100129965110000"
+23: SENTENCE: status
+=""
+23: SENTENCE: messageId
+="1"
+23: SENTENCE: type
+="
+23: SENTENCE: REQ
+"
+23: SENTENCE: serviceProviderId
+="
+23: SENTENCE: SP004
+"/><
+23: SENTENCE: Body
+><
+23: SENTENCE: Oli
+><
+23: SENTENCE: OliControl oliId
+="1"
+23: SENTENCE: subscriptionId
+="11001745775"
+23: SENTENCE: accountId
+="11001745775"/><
+23: SENTENCE: ACTSUB
+><
+23: SENTENCE: Product contractDuration
+="0"
+23: SENTENCE: productName
+="
+23: SENTENCE: MBA Tariff
+"
+23: SENTENCE: productCode
+="
+23: SENTENCE: O2P3020
+"
+23: SENTENCE: productCategory
+="
+23: SENTENCE: MOB
+"><
+23: SENTENCE: Option operation
+="
+23: SENTENCE: ADD
+"
+23: SENTENCE: optionType
+="
+23: SENTENCE: SIM
+"
+23: SENTENCE: optionId
+="
+23: SENTENCE: O2O0014
+"><
+23: SENTENCE: Attribute name
+="
+23: SENTENCE: SIMType
+"
+23: SENTENCE: value
+="3
+23: SENTENCE: G SIMV2
+"/><
+23: SENTENCE: Attribute name
+="
+23: SENTENCE: SIMNumber
+"
+23: SENTENCE: value
+="8949227181705978281"/></
+23: SENTENCE: Option
+><
+23: SENTENCE: Option operation
+="
+23: SENTENCE: ADD
+"
+23: SENTENCE: optionType
+="
+23: SENTENCE: MSISDN
+"
+23: SENTENCE: optionId
+="
+23: SENTENCE: O2O0015
+"><
+23: SENTENCE: Attribute name
+="
+23: SENTENCE: MSISDNNumber
+"
+23: SENTENCE: value
+="4915901786978"/><
+23: SENTENCE: Attribute name
+="
+23: SENTENCE: allocationSource
+"
+23: SENTENCE: value
+="7"/></
+23: SENTENCE: Option
+><
+23: SENTENCE: Option operation
+="
+23: SENTENCE: ADD
+"
+23: SENTENCE: optionType
+="
+23: SENTENCE: BarHardToReachNumbers
+"
+23: SENTENCE: optionId
+="
+23: SENTENCE: O2O3061
+"/><
+23: SENTENCE: Option operation
+="
+23: SENTENCE: ADD
+"
+23: SENTENCE: optionType
+="
+23: SENTENCE: AdditionalCounterCountryGroup
+"
+23: SENTENCE: optionId
+="
+23: SENTENCE: O2O3253
+"><
+23: SENTENCE: Attribute name
+="
+23: SENTENCE: ProfileIDWZ2
+"
+23: SENTENCE: value
+="1180"/></
+23: SENTENCE: Option
+><
+23: SENTENCE: Option operation
+="
+23: SENTENCE: ADD
+"
+23: SENTENCE: optionType
+="
+23: SENTENCE: FSK0
+"
+23: SENTENCE: optionId
+="
+23: SENTENCE: O2O0170
+"/><
+23: SENTENCE: Option operation
+="
+23: SENTENCE: ADD
+"
+23: SENTENCE: optionType
+="
+23: SENTENCE: International
+"
+23: SENTENCE: optionId
+="
+23: SENTENCE: O2O0089
+"/><
+23: SENTENCE: Option operation
+="
+23: SENTENCE: ADD
+"
+23: SENTENCE: optionType
+="
+23: SENTENCE: ConferenceCall
+"
+23: SENTENCE: optionId
+="
+23: SENTENCE: O2O2050
+"/><
+23: SENTENCE: Option operation
+="
+23: SENTENCE: ADD
+"
+23: SENTENCE: optionType
+="
+23: SENTENCE: UseNationalVolumeForEU
+"
+23: SENTENCE: optionId
+="
+23: SENTENCE: O2O3171
+"
+23: SENTENCE: optionReference
+="
+23: SENTENCE: O2O3171
+"/><
+23: SENTENCE: Option operation
+="
+23: SENTENCE: ADD
+"
+23: SENTENCE: optionType
+="
+23: SENTENCE: BarVasCharity
+"
+23: SENTENCE: optionId
+="
+23: SENTENCE: O2O3175
+"/><
+23: SENTENCE: Option operation
+="
+23: SENTENCE: ADD
+"
+23: SENTENCE: optionType
+="
+23: SENTENCE: RtiProfileVoice
+"
+23: SENTENCE: optionId
+="
+23: SENTENCE: O2O3056
+"><
+23: SENTENCE: Attribute name
+="
+23: SENTENCE: rtiProfileId
+"
+23: SENTENCE: value
+="1387"/></
+23: SENTENCE: Option
+><
+23: SENTENCE: Option operation
+="
+23: SENTENCE: ADD
+"
+23: SENTENCE: optionType
+="
+23: SENTENCE: BarVasApps
+"
+23: SENTENCE: optionId
+="
+23: SENTENCE: O2O3177
+"/><
+23: SENTENCE: Option operation
+="
+23: SENTENCE: ADD
+"
+23: SENTENCE: optionType
+="
+23: SENTENCE: BarVasAdult
+"
+23: SENTENCE: optionId
+="
+23: SENTENCE: O2O3176
+"/><
+23: SENTENCE: Option operation
+="
+23: SENTENCE: ADD
+"
+23: SENTENCE: optionType
+="
+23: SENTENCE: InternetUnlimitedRoW
+"
+23: SENTENCE: optionId
+="
+23: SENTENCE: O2O3181
+"><
+23: SENTENCE: Attribute name
+="
+23: SENTENCE: ProfileIdRoW
+"
+23: SENTENCE: value
+="1188"/></
+23: SENTENCE: Option
+><
+23: SENTENCE: Option operation
+="
+23: SENTENCE: ADD
+"
+23: SENTENCE: optionType
+="
+23: SENTENCE: RtiProfileData
+"
+23: SENTENCE: optionId
+="
+23: SENTENCE: O2O3057
+"><
+23: SENTENCE: Attribute name
+="
+23: SENTENCE: rtiProfileId
+"
+23: SENTENCE: value
+="2452"/></
+23: SENTENCE: Option
+><
+23: SENTENCE: Option operation
+="
+23: SENTENCE: ADD
+"
+23: SENTENCE: optionType
+="
+23: SENTENCE: APN_1
+"
+23: SENTENCE: optionId
+="
+23: SENTENCE: O2O3096
+"
+23: SENTENCE: optionReference
+="
+23: SENTENCE: O2O3096
+"><
+23: SENTENCE: Attribute name
+="
+23: SENTENCE: dataAutomatic
+"
+23: SENTENCE: value
+="
+23: SENTENCE: false
+"/><
+23: SENTENCE: Attribute name
+="
+23: SENTENCE: ProfileId
+"
+23: SENTENCE: value
+="1128"/></
+23: SENTENCE: Option
+><
+23: SENTENCE: Option operation
+="
+23: SENTENCE: ADD
+"
+23: SENTENCE: optionType
+="
+23: SENTENCE: BarPremiumInfoNumbers
+"
+23: SENTENCE: optionId
+="
+23: SENTENCE: O2O3060
+"/><
+23: SENTENCE: Option operation
+="
+23: SENTENCE: ADD
+"
+23: SENTENCE: optionType
+="
+23: SENTENCE: BarVasInformation
+"
+23: SENTENCE: optionId
+="
+23: SENTENCE: O2O3173
+"/><
+23: SENTENCE: Option operation
+="
+23: SENTENCE: ADD
+"
+23: SENTENCE: optionType
+="
+23: SENTENCE: BarEntertainmentNumbers
+"
+23: SENTENCE: optionId
+="
+23: SENTENCE: O2O0031
+"/><
+23: SENTENCE: Option operation
+="
+23: SENTENCE: ADD
+"
+23: SENTENCE: optionType
+="
+23: SENTENCE: BarVasTicketing
+"
+23: SENTENCE: optionId
+="
+23: SENTENCE: O2O3174
+"/><
+23: SENTENCE: Option operation
+="
+23: SENTENCE: ADD
+"
+23: SENTENCE: optionType
+="
+23: SENTENCE: BarPortalContent
+"
+23: SENTENCE: optionId
+="
+23: SENTENCE: O2O0132
+"/><
+23: SENTENCE: Option operation
+="
+23: SENTENCE: ADD
+"
+23: SENTENCE: optionType
+="
+23: SENTENCE: BarVasAbo
+"
+23: SENTENCE: optionId
+="
+23: SENTENCE: O2O3172
+"/><
+23: SENTENCE: Option operation
+="
+23: SENTENCE: ADD
+"
+23: SENTENCE: optionType
+="
+23: SENTENCE: BrandInformation
+"
+23: SENTENCE: optionId
+="
+23: SENTENCE: O2O3184
+"><
+23: SENTENCE: Attribute name
+="
+23: SENTENCE: brandId
+"
+23: SENTENCE: value
+="118"/></
+23: SENTENCE: Option
+></
+23: SENTENCE: Product
+></
+23: SENTENCE: ACTSUB
+></
+23: SENTENCE: Oli
+></
+23: SENTENCE: Body
+></
+23: SENTENCE: Order
+>
+24: TIMESTAMP: 2018-05-09 00:00:21,150
+
+24: LEVEL: INFO
+[:]
+24: SENTENCE: message file with name
+'
+24: PATH: SP004_1100127633468000_ACK.xml
+'
+25: SENTENCE: has length zero, retrying later
+
+
+25: TIMESTAMP: 2018-05-09 00:00:21,150
+
+25: LEVEL: INFO
+[:]
+25: SENTENCE: message file with name
+'
+25: PATH: SP004_1100129776736000_REQ.xml_rejected_293
+'
+26: SENTENCE: has length zero, retrying later
+
+
+26: TIMESTAMP: 2018-05-09 00:00:30,170
+
+26: LEVEL: INFO
+[129965122
+26: SENTENCE: _0    :
+]
+26: SENTENCE: SENT: UNA:
++,?'
+26: SENTENCE: UNB
++
+26: SENTENCE: UNOA:
+1+
+26: SENTENCE: MMO
++
+26: SENTENCE: D2PU
++180509:0000+129965122
+26: SENTENCE: _0
+'
+26: SENTENCE: UNH
++129965122
+26: SENTENCE: _0
++
+26: SENTENCE: D2ACAN:
+1'
+26: SENTENCE: XAK
++
+26: SENTENCE: CP49AA01
+'
+26: SENTENCE: XNV
++1523'
+26: SENTENCE: XMS
++2082163'
+26: SENTENCE: XSD
++
+26: SENTENCE: AL
+++'
+26: SENTENCE: UNT
++6+129965122
+26: SENTENCE: _0
+'
+26: SENTENCE: UNZ
++1+129965122
+26: SENTENCE: _0
+'
+27: TIMESTAMP: 2018-05-09 00:00:30,188
+
+27: LEVEL: INFO
+[129965116
+27: SENTENCE: _0    :
+]
+27: SENTENCE: SENT: UNA:
++,?'
+27: SENTENCE: UNB
++
+27: SENTENCE: UNOA:
+1+
+27: SENTENCE: MMO
++
+27: SENTENCE: D2PU
++180509:0000+129965116
+27: SENTENCE: _0
+'
+27: SENTENCE: UNH
++129965116
+27: SENTENCE: _0
++
+27: SENTENCE: D2ACAN:
+1'
+27: SENTENCE: XAK
++
+27: SENTENCE: CP49AA01
+'
+27: SENTENCE: XNV
++1523'
+27: SENTENCE: XMS
++2015752'
+27: SENTENCE: XSD
++
+27: SENTENCE: AL
+++'
+27: SENTENCE: UNT
++6+129965116
+27: SENTENCE: _0
+'
+27: SENTENCE: UNZ
++1+129965116
+27: SENTENCE: _0
+'
+28: TIMESTAMP: 2018-05-09 00:00:30,224
+
+28: LEVEL: INFO
+[129965115
+28: SENTENCE: _0    :
+]
+28: SENTENCE: SENT: UNA:
++,?'
+28: SENTENCE: UNB
++
+28: SENTENCE: UNOA:
+1+
+28: SENTENCE: MMO
++
+28: SENTENCE: D2PU
++180509:0000+129965115
+28: SENTENCE: _0
+'
+28: SENTENCE: UNH
++129965115
+28: SENTENCE: _0
++
+28: SENTENCE: D2ACAN:
+1'
+28: SENTENCE: XAK
++
+28: SENTENCE: CP49AA01
+'
+28: SENTENCE: XNV
++1523'
+28: SENTENCE: XMS
++3672303'
+28: SENTENCE: XSD
++
+28: SENTENCE: AL
+++'
+28: SENTENCE: UNT
++6+129965115
+28: SENTENCE: _0
+'
+28: SENTENCE: UNZ
++1+129965115
+28: SENTENCE: _0
+'
+29: TIMESTAMP: 2018-05-09 00:00:36,215
+
+29: LEVEL: INFO
+[:]
+29: SENTENCE: message file with name
+'
+29: PATH: SP004_1100127633468000_ACK.xml
+'
+30: SENTENCE: has length zero, retrying later
+
+
+30: TIMESTAMP: 2018-05-09 00:00:36,216
+
+30: LEVEL: INFO
+[:]
+30: SENTENCE: message file with name
+'
+30: PATH: SP004_1100129776736000_REQ.xml_rejected_293
+'
+31: SENTENCE: has length zero, retrying later
+
+
+31: TIMESTAMP: 2018-05-09 00:00:42,159
+
+31: LEVEL: INFO
+[:]
+31: SENTENCE: message file with name
+'
+31: PATH: SP004_1100127633468000_ACK.xml
+'
+33: SENTENCE: has length zero, retrying later
+
+
+
+33: TIMESTAMP: 2018-05-09 00:05:08,344
+
+33: LEVEL: INFO
+[1100129965279000:]
+33: SENTENCE: SENT:
+<?
+33: SENTENCE: xml version
+="1.0"
+33: SENTENCE: encoding
+="
+33: SENTENCE: UTF-8
+"
+33: SENTENCE: standalone
+="
+33: SENTENCE: yes
+"?><
+33: SENTENCE: Order
+><
+33: SENTENCE: Header dateOfExecution
+="
+33: TIMESTAMP: 2018-05-09 00:05:08
+"
+33: SENTENCE: orderId
+="1100129965279000"
+33: SENTENCE: status
+=""
+33: SENTENCE: messageId
+="1"
+33: SENTENCE: type
+="
+33: SENTENCE: REQ
+"
+33: SENTENCE: serviceProviderId
+="
+33: SENTENCE: SP004
+"/><
+33: SENTENCE: Body
+><
+33: SENTENCE: Oli
+><
+33: SENTENCE: OliControl oliId
+="1"
+33: SENTENCE: subscriptionId
+="11001740541"
+33: SENTENCE: accountId
+="11001740541"/><
+33: SENTENCE: MIGOPT
+><
+33: SENTENCE: MigratedOptions
+><
+33: SENTENCE: Option operation
+="
+33: SENTENCE: CHG
+"
+33: SENTENCE: optionType
+="
+33: SENTENCE: MSISDN
+"
+33: SENTENCE: optionId
+="
+33: SENTENCE: O2O0015
+"><
+33: SENTENCE: Attribute name
+="
+33: SENTENCE: MSISDNNumber
+"
+33: SENTENCE: value
+="4915253193007"/><
+33: SENTENCE: Attribute name
+="
+33: SENTENCE: allocationSource
+"
+33: SENTENCE: value
+="5"/><
+33: SENTENCE: Attribute name
+="
+33: SENTENCE: donatingNO
+"
+33: SENTENCE: value
+="
+33: SENTENCE: D2
+"/><
+33: SENTENCE: Attribute name
+="
+33: SENTENCE: donatingSP
+"
+33: SENTENCE: value
+="1
+33: SENTENCE: UN1
+"/><
+33: SENTENCE: Attribute name
+="
+33: SENTENCE: recipientNO
+"
+33: SENTENCE: value
+="
+33: SENTENCE: O2
+"/><
+33: SENTENCE: Attribute name
+="
+33: SENTENCE: confirmedPortingDate
+"
+33: SENTENCE: value
+="
+33: TIMESTAMP: 2018-05-16 00:00:00
+"/></
+33: SENTENCE: Option
+></
+33: SENTENCE: MigratedOptions
+></
+33: SENTENCE: MIGOPT
+></
+33: SENTENCE: Oli
+></
+33: SENTENCE: Body
+></
+33: SENTENCE: Order
+>
+34: TIMESTAMP: 2018-05-09 00:05:11,274
+
+34: LEVEL: INFO
+[1100129965299000:]
+34: SENTENCE: SENT:
+<?
+34: SENTENCE: xml version
+="1.0"
+34: SENTENCE: encoding
+="
+34: SENTENCE: UTF-8
+"
+34: SENTENCE: standalone
+="
+34: SENTENCE: yes
+"?><
+34: SENTENCE: Order
+><
+34: SENTENCE: Header dateOfExecution
+="
+34: TIMESTAMP: 2018-05-09 00:05:11
+"
+34: SENTENCE: orderId
+="1100129965299000"
+34: SENTENCE: status
+=""
+34: SENTENCE: messageId
+="1"
+34: SENTENCE: type
+="
+34: SENTENCE: REQ
+"
+34: SENTENCE: serviceProviderId
+="
+34: SENTENCE: SP004
+"/><
+34: SENTENCE: Body
+><
+34: SENTENCE: Oli
+><
+34: SENTENCE: OliControl oliId
+="1"
+34: SENTENCE: subscriptionId
+="11001737282"
+34: SENTENCE: accountId
+="11001737282"/><
+34: SENTENCE: MIGOPT
+><
+34: SENTENCE: MigratedOptions
+><
+34: SENTENCE: Option operation
+="
+34: SENTENCE: CHG
+"
+34: SENTENCE: optionType
+="
+34: SENTENCE: MSISDN
+"
+34: SENTENCE: optionId
+="
+34: SENTENCE: O2O0015
+"><
+34: SENTENCE: Attribute name
+="
+34: SENTENCE: MSISDNNumber
+"
+34: SENTENCE: value
+="4915253840270"/><
+34: SENTENCE: Attribute name
+="
+34: SENTENCE: allocationSource
+"
+34: SENTENCE: value
+="5"/><
+34: SENTENCE: Attribute name
+="
+34: SENTENCE: donatingNO
+"
+34: SENTENCE: value
+="
+34: SENTENCE: D2
+"/><
+34: SENTENCE: Attribute name
+="
+34: SENTENCE: donatingSP
+"
+34: SENTENCE: value
+="1
+34: SENTENCE: UN1
+"/><
+34: SENTENCE: Attribute name
+="
+34: SENTENCE: recipientNO
+"
+34: SENTENCE: value
+="
+34: SENTENCE: O2
+"/><
+34: SENTENCE: Attribute name
+="
+34: SENTENCE: confirmedPortingDate
+"
+34: SENTENCE: value
+="
+34: TIMESTAMP: 2018-05-16 00:00:00
+"/></
+34: SENTENCE: Option
+></
+34: SENTENCE: MigratedOptions
+></
+34: SENTENCE: MIGOPT
+></
+34: SENTENCE: Oli
+></
+34: SENTENCE: Body
+></
+34: SENTENCE: Order
+>
+35: TIMESTAMP: 2018-05-09 00:05:11,281
+
+35: LEVEL: INFO
+[1100129965302000:]
+35: SENTENCE: SENT:
+<?
+35: SENTENCE: xml version
+="1.0"
+35: SENTENCE: encoding
+="
+35: SENTENCE: UTF-8
+"
+35: SENTENCE: standalone
+="
+35: SENTENCE: yes
+"?><
+35: SENTENCE: Order
+><
+35: SENTENCE: Header dateOfExecution
+="
+35: TIMESTAMP: 2018-05-09 00:05:11
+"
+35: SENTENCE: orderId
+="1100129965302000"
+35: SENTENCE: status
+=""
+35: SENTENCE: messageId
+="1"
+35: SENTENCE: type
+="
+35: SENTENCE: REQ
+"
+35: SENTENCE: serviceProviderId
+="
+35: SENTENCE: SP004
+"/><
+35: SENTENCE: Body
+><
+35: SENTENCE: Oli
+><
+35: SENTENCE: OliControl oliId
+="1"
+35: SENTENCE: subscriptionId
+="11001745379"
+35: SENTENCE: accountId
+="11001745379"/><
+35: SENTENCE: MIGOPT
+><
+35: SENTENCE: MigratedOptions
+><
+35: SENTENCE: Option operation
+="
+35: SENTENCE: CHG
+"
+35: SENTENCE: optionType
+="
+35: SENTENCE: MSISDN
+"
+35: SENTENCE: optionId
+="
+35: SENTENCE: O2O0015
+"><
+35: SENTENCE: Attribute name
+="
+35: SENTENCE: MSISDNNumber
+"
+35: SENTENCE: value
+="491773430486"/><
+35: SENTENCE: Attribute name
+="
+35: SENTENCE: allocationSource
+"
+35: SENTENCE: value
+="5"/><
+35: SENTENCE: Attribute name
+="
+35: SENTENCE: donatingNO
+"
+35: SENTENCE: value
+="
+35: SENTENCE: D2
+"/><
+35: SENTENCE: Attribute name
+="
+35: SENTENCE: donatingSP
+"
+35: SENTENCE: value
+="1
+35: SENTENCE: UN1
+"/><
+35: SENTENCE: Attribute name
+="
+35: SENTENCE: recipientNO
+"
+35: SENTENCE: value
+="
+35: SENTENCE: O2
+"/><
+35: SENTENCE: Attribute name
+="
+35: SENTENCE: confirmedPortingDate
+"
+35: SENTENCE: value
+="
+35: TIMESTAMP: 2018-05-17 00:00:00
+"/></
+35: SENTENCE: Option
+></
+35: SENTENCE: MigratedOptions
+></
+35: SENTENCE: MIGOPT
+></
+35: SENTENCE: Oli
+></
+35: SENTENCE: Body
+></
+35: SENTENCE: Order
+>
+36: TIMESTAMP: 2018-05-09 00:05:11,283
+
+36: LEVEL: INFO
+[1100129965300000:]
+36: SENTENCE: SENT:
+<?
+36: SENTENCE: xml version
+="1.0"
+36: SENTENCE: encoding
+="
+36: SENTENCE: UTF-8
+"
+36: SENTENCE: standalone
+="
+36: SENTENCE: yes
+"?><
+36: SENTENCE: Order
+><
+36: SENTENCE: Header dateOfExecution
+="
+36: TIMESTAMP: 2018-05-09 00:05:11
+"
+36: SENTENCE: orderId
+="1100129965300000"
+36: SENTENCE: status
+=""
+36: SENTENCE: messageId
+="1"
+36: SENTENCE: type
+="
+36: SENTENCE: REQ
+"
+36: SENTENCE: serviceProviderId
+="
+36: SENTENCE: SP004
+"/><
+36: SENTENCE: Body
+><
+36: SENTENCE: Oli
+><
+36: SENTENCE: OliControl oliId
+="1"
+36: SENTENCE: subscriptionId
+="11001736891"
+36: SENTENCE: accountId
+="11001736891"/><
+36: SENTENCE: MIGOPT
+><
+36: SENTENCE: MigratedOptions
+><
+36: SENTENCE: Option operation
+="
+36: SENTENCE: CHG
+"
+36: SENTENCE: optionType
+="
+36: SENTENCE: MSISDN
+"
+36: SENTENCE: optionId
+="
+36: SENTENCE: O2O0015
+"><
+36: SENTENCE: Attribute name
+="
+36: SENTENCE: MSISDNNumber
+"
+36: SENTENCE: value
+="491738282027"/><
+36: SENTENCE: Attribute name
+="
+36: SENTENCE: allocationSource
+"
+36: SENTENCE: value
+="5"/><
+36: SENTENCE: Attribute name
+="
+36: SENTENCE: donatingNO
+"
+36: SENTENCE: value
+="
+36: SENTENCE: D2
+"/><
+36: SENTENCE: Attribute name
+="
+36: SENTENCE: donatingSP
+"
+36: SENTENCE: value
+="1
+36: SENTENCE: UN1
+"/><
+36: SENTENCE: Attribute name
+="
+36: SENTENCE: recipientNO
+"
+36: SENTENCE: value
+="
+36: SENTENCE: O2
+"/><
+36: SENTENCE: Attribute name
+="
+36: SENTENCE: confirmedPortingDate
+"
+36: SENTENCE: value
+="
+36: TIMESTAMP: 2018-05-16 00:00:00
+"/></
+36: SENTENCE: Option
+></
+36: SENTENCE: MigratedOptions
+></
+36: SENTENCE: MIGOPT
+></
+36: SENTENCE: Oli
+></
+36: SENTENCE: Body
+></
+36: SENTENCE: Order
+>
+37: TIMESTAMP: 2018-05-09 00:05:11,290
+
+37: LEVEL: INFO
+[1100129965301000:]
+37: SENTENCE: SENT:
+<?
+37: SENTENCE: xml version
+="1.0"
+37: SENTENCE: encoding
+="
+37: SENTENCE: UTF-8
+"
+37: SENTENCE: standalone
+="
+37: SENTENCE: yes
+"?><
+37: SENTENCE: Order
+><
+37: SENTENCE: Header dateOfExecution
+="
+37: TIMESTAMP: 2018-05-09 00:05:11
+"
+37: SENTENCE: orderId
+="1100129965301000"
+37: SENTENCE: status
+=""
+37: SENTENCE: messageId
+="1"
+37: SENTENCE: type
+="
+37: SENTENCE: REQ
+"
+37: SENTENCE: serviceProviderId
+="
+37: SENTENCE: SP004
+"/><
+37: SENTENCE: Body
+><
+37: SENTENCE: Oli
+><
+37: SENTENCE: OliControl oliId
+="1"
+37: SENTENCE: subscriptionId
+="11001737459"
+37: SENTENCE: accountId
+="11001737459"/><
+37: SENTENCE: MIGOPT
+><
+37: SENTENCE: MigratedOptions
+><
+37: SENTENCE: Option operation
+="
+37: SENTENCE: CHG
+"
+37: SENTENCE: optionType
+="
+37: SENTENCE: MSISDN
+"
+37: SENTENCE: optionId
+="
+37: SENTENCE: O2O0015
+"><
+37: SENTENCE: Attribute name
+="
+37: SENTENCE: MSISDNNumber
+"
+37: SENTENCE: value
+="4917624432890"/><
+37: SENTENCE: Attribute name
+="
+37: SENTENCE: allocationSource
+"
+37: SENTENCE: value
+="5"/><
+37: SENTENCE: Attribute name
+="
+37: SENTENCE: donatingNO
+"
+37: SENTENCE: value
+="
+37: SENTENCE: D2
+"/><
+37: SENTENCE: Attribute name
+="
+37: SENTENCE: donatingSP
+"
+37: SENTENCE: value
+="1
+37: SENTENCE: UN1
+"/><
+37: SENTENCE: Attribute name
+="
+37: SENTENCE: recipientNO
+"
+37: SENTENCE: value
+="
+37: SENTENCE: O2
+"/><
+37: SENTENCE: Attribute name
+="
+37: SENTENCE: confirmedPortingDate
+"
+37: SENTENCE: value
+="
+37: TIMESTAMP: 2018-05-16 00:00:00
+"/></
+37: SENTENCE: Option
+></
+37: SENTENCE: MigratedOptions
+></
+37: SENTENCE: MIGOPT
+></
+37: SENTENCE: Oli
+></
+37: SENTENCE: Body
+></
+37: SENTENCE: Order
+>
+39: TIMESTAMP: 2018-05-09 00:09:20,440
+
+39: LEVEL: INFO
+
+39: SENTENCE: accmopiboss01
+[
+39: PATH: com.oneandone.access.mobile.x400gateway.connector.X400FtpConnectorImpl
+](
+40: SENTENCE: EJB timer-thre
+ad-pool
+-5)
+40: SENTENCE: Message from file:
+1
+40: PATH: UN1YY00000104787297.bua
+
+40: SENTENCE: has been sent
+.
+48: SENTENCE: See payload:
+$submit infobase: sentfolder
+impdu::
+  impdu_heading::
+    originator::
+      x400f1::
+        country: DE
+        admd: viaT
+        organization:
+1+1-
+50: SENTENCE: Internet-AG
+        personal_name::
+          surname:
+1+1-
+64: SENTENCE: Mobilfunk
+        end
+      end
+    end
+    primary_recipients::
+      x400f1::
+        country: DE
+        admd: VIAT
+        organization: O2-Germany
+        personal_name::
+          surname: MNP
+        end
+      end
+    end
+    subject: MNPAnfr;
+4917684339819;1
+64: SENTENCE: UN1YY00000104787297;
+1
+67: SENTENCE: UN1;O2DE
+  end
+  impdu_body::
+    text:
+<?
+67: SENTENCE: xml version
+="1.0"
+67: SENTENCE: encoding
+="
+67: SENTENCE: ISO-8859-1
+"?><
+68: SENTENCE: MNPAnfr
+><
+69: SENTENCE: Portier-ID
+>1
+69: SENTENCE: UN1YY00000104787297
+</
+69: SENTENCE: Portier-ID
+><
+70: SENTENCE: Version
+>02.00</
+70: SENTENCE: Version
+><
+71: SENTENCE: RufNr
+>4917684339819</
+71: SENTENCE: RufNr
+><
+72: SENTENCE: NBauf
+>
+72: SENTENCE: O2
+</
+72: SENTENCE: NBauf
+><
+73: SENTENCE: DAab
+>
+73: SENTENCE: O2DE
+</
+73: SENTENCE: DAab
+><
+74: SENTENCE: DAauf
+>1
+74: SENTENCE: UN1
+</
+74: SENTENCE: DAauf
+><
+75: SENTENCE: Portier-Termin
+><
+76: SENTENCE: VTEN
+>
+76: SENTENCE: VTEN
+</
+76: SENTENCE: VTEN
+></
+77: SENTENCE: Portier-Termin
+><
+78: SENTENCE: Freitext
+/><
+79: SENTENCE: Kunden-info
+><
+80: SENTENCE: Privatkunde
+><
+81: SENTENCE: Name
+>
+81: SENTENCE: Worrech
+</
+81: SENTENCE: Name
+><
+82: SENTENCE: Vorname
+>
+82: SENTENCE: Sarah
+</
+82: SENTENCE: Vorname
+><
+83: SENTENCE: Geburtsdatum
+>
+83: DATE: 1983-08-06
+</
+83: SENTENCE: Geburtsdatum
+></
+84: SENTENCE: Privatkunde
+></
+85: SENTENCE: Kunden-info
+></
+86: SENTENCE: MNPAnfr
+>
+92: SENTENCE: eotext
+  end
+end
+$exit
+
+
+
+92: TIMESTAMP: 2018-05-09 00:09:20,521
+
+92: LEVEL: INFO
+
+92: SENTENCE: accmopiboss01
+[
+92: PATH: com.oneandone.access.mobile.x400gateway.connector.X400FtpConnectorImpl
+](
+92: SENTENCE: EJB timer-thread-pool
+-1)
+92: SENTENCE: Result Null beim X400FtpConnectorImpl
+.
+92: SENTENCE: listIncomingFileNames
+.
+92: SENTENCE: Returning empty file list
+.
+93: TIMESTAMP: 2018-05-09 00:09:30,158
+
+93: LEVEL: INFO
+
+93: SENTENCE: accmopiboss01
+[
+93: PATH: com.oneandone.access.mobile.x400gateway.connector.X400FtpConnectorImpl
+](
+93: SENTENCE: pool-1380221-thread-5
+)
+93: SENTENCE: List Files geladen: Length:
+0
+94: TIMESTAMP: 2018-05-09 00:09:40,141
+
+94: LEVEL: INFO
+
+94: SENTENCE: accmopiboss01
+[
+94: PATH: com.oneandone.access.mobile.x400gateway.connector.X400FtpConnectorImpl
+](
+94: SENTENCE: pool-1380224-thread-5
+)
+94: SENTENCE: List Files geladen: Length:
+0
+95: TIMESTAMP: 2018-05-09 00:09:40,366
+
+95: LEVEL: INFO
+
+95: SENTENCE: accmopiboss01
+[
+95: PATH: com.oneandone.access.mobile.x400gateway.connector.X400FtpConnectorImpl
+](
+95: SENTENCE: EJB timer-thread-pool
+-9)
+95: SENTENCE: Message from file:
+20180509-000940.
+95: SENTENCE: bua has been sent
+.
+96: SENTENCE: See payload:
+
+
+96: TIMESTAMP: 2018-05-09 00:09:40,366
+
+96: LEVEL: INFO
+
+96: SENTENCE: accmopiboss01
+[
+96: PATH: com.oneandone.access.mobile.x400gateway.connector.X400FtpConnectorImpl
+](
+96: SENTENCE: EJB timer-thread-pool
+-9)
+96: SENTENCE: Message from file:
+20180509-000940.
+96: SENTENCE: bua has been sent
+.
+99: SENTENCE: See payload:
+$fetch infobase:infolder entry_status:new
+$exit
+
+
+99: TIMESTAMP: 2018-05-09 00:09:40,466
+
+99: LEVEL: INFO
+
+99: SENTENCE: accmopiboss01
+[
+99: PATH: com.oneandone.access.mobile.x400gateway.connector.X400FtpConnectorImpl
+](
+99: SENTENCE: EJB timer-thread-pool
+-9)
+99: SENTENCE: Result Null beim X400FtpConnectorImpl
+.
+99: SENTENCE: listIncomingFileNames
+.
+99: SENTENCE: Returning empty file list
+.
+100: TIMESTAMP: 2018-05-09 00:09:50,043
+
+100: SENTENCE: WARN  accmopiboss01
+[
+100: PATH: com.oneandone.swistec.platform.client.servicelocate.security.LoginHandler
+](
+100: SENTENCE: EJB default
+-5)
+100: SENTENCE: Could not determine security properties
+.
+100: SENTENCE: No security will be configured
+.
+100: SENTENCE: The error message was: No jpc
+.
+101: SENTENCE: properties file found in application deployment
+
+
+101: TIMESTAMP: 2018-05-09 00:09:50,048
+
+101: SENTENCE: WARN  accmopiboss01
+[
+101: PATH: com.oneandone.swistec.platform.client.servicelocate.security.LoginHandler
+](
+101: SENTENCE: EJB default
+-5)
+101: SENTENCE: Could not determine security properties
+.
+101: SENTENCE: No security will be configured
+.
+101: SENTENCE: The error message was: No jpc
+.
+102: SENTENCE: properties file found in application deployment
+
+
+102: TIMESTAMP: 2018-05-09 00:09:50,050
+
+102: SENTENCE: WARN  accmopiboss01
+[
+102: PATH: com.oneandone.swistec.platform.client.servicelocate.security.LoginHandler
+](
+102: SENTENCE: EJB default
+-5)
+102: SENTENCE: Could not determine security properties
+.
+102: SENTENCE: No security will be configured
+.
+102: SENTENCE: The error message was: No jpc
+.
+103: SENTENCE: properties file found in application deployment
+
+
+103: TIMESTAMP: 2018-05-09 00:09:50,054
+
+103: SENTENCE: WARN  accmopiboss01
+[
+103: PATH: com.oneandone.swistec.platform.client.servicelocate.security.LoginHandler
+](
+103: SENTENCE: EJB default
+-5)
+103: SENTENCE: Could not determine security properties
+.
+103: SENTENCE: No security will be configured
+.
+103: SENTENCE: The error message was: No jpc
+.
+104: SENTENCE: properties file found in application deployment
+
+
+104: TIMESTAMP: 2018-05-09 00:09:50,055
+
+104: LEVEL: INFO
+
+104: SENTENCE: accmopiboss01
+[
+104: PATH: com.oneandone.access.mobile.x400gateway.core.X400GatewayImpl
+](
+104: SENTENCE: EJB default
+-5)
+104: SENTENCE: call sendInPortingRequest
+(
+104: SENTENCE: phoneNumber
+=491638024219,
+104: SENTENCE: serviceProviderCode
+=
+104: SENTENCE: O2DE, networkProviderCode
+=
+104: SENTENCE: O2, customerInfo
+=
+104: SENTENCE: Maike Jan
+?
+104: SENTENCE: en-van Hoof
+
+104: TIMESTAMP: 1977-11-13 00:00:00
+.0,
+104: SENTENCE: portingType
+=
+104: SENTENCE: END_OF_CONTRACT, freetext
+=
+104: SENTENCE: null, correlationId
+=902
+104: SENTENCE: ad9d1-2979-4b37-9844-fbae7a6a63fd, clientId
+=
+104: SENTENCE: SEND_MNPIN_QUERY_4_0
+)
+104: SENTENCE: returns
+1
+104: SENTENCE: UN1YY00000104787302
+[
+104: SENTENCE: duration
+=14
+104: SENTENCE: ms
+]
+105: TIMESTAMP: 2018-05-09 00:09:50,109
+
+105: LEVEL: INFO
+
+105: SENTENCE: accmopiboss01
+[
+105: PATH: com.oneandone.access.mobile.x400gateway.connector.X400FtpConnectorImpl
+](
+105: SENTENCE: pool-1380226-thread-5
+)
+105: SENTENCE: List Files geladen: Length:
+0
+106: TIMESTAMP: 2018-05-09 00:10:00,140
+
+106: LEVEL: INFO
+
+106: SENTENCE: accmopiboss01
+[
+106: PATH: com.oneandone.access.mobile.x400gateway.connector.X400FtpConnectorImpl
+](
+106: SENTENCE: pool-1380229-thread-5
+)
+106: SENTENCE: List Files geladen: Length:
+0
+107: TIMESTAMP: 2018-05-09 00:00:12,918
+
+107: SENTENCE: WARN
+[
+107: SENTENCE: accmopiboss01
+][
+107: PATH: org.jboss.as.ejb3
+](
+107: SENTENCE: EJB timer-thread-pool
+-2)
+107: SENTENCE: JBAS014143: Timer
+67
+107: SENTENCE: fd83a5-3bae-4e15-95e2-a0ade07e2ab6 is still active, skipping overlapping scheduled execution at: Wed May
+09
+107: TIME: 00:00:12
+
+107: SENTENCE: CEST
+2018
+108: TIMESTAMP: 2018-05-09 00:00:13,757
+
+108: SENTENCE: WARN
+[
+108: SENTENCE: accmopiboss01
+][
+108: PATH: org.jboss.as.ejb3
+](
+108: SENTENCE: EJB timer-thread-pool
+-9)
+108: SENTENCE: JBAS014143: Timer
+34
+108: SENTENCE: ccee91-6a0e-41a8-a8d3-e1c4098b8390 is still active, skipping overlapping scheduled execution at: Wed May
+09
+108: TIME: 00:00:13
+
+108: SENTENCE: CEST
+2018
+109: TIMESTAMP: 2018-05-09 00:00:13,918
+
+109: SENTENCE: WARN
+[
+109: SENTENCE: accmopiboss01
+][
+109: PATH: org.jboss.as.ejb3
+](
+109: SENTENCE: EJB timer-thread-pool
+-4)
+109: SENTENCE: JBAS014143: Timer
+67
+109: SENTENCE: fd83a5-3bae-4e15-95e2-a0ade07e2ab6 is still active, skipping overlapping scheduled execution at: Wed May
+09
+109: TIME: 00:00:13
+
+109: SENTENCE: CEST
+2018
+110: TIMESTAMP: 2018-05-09 00:00:14,757
+
+110: SENTENCE: WARN
+[
+110: SENTENCE: accmopiboss01
+][
+110: PATH: org.jboss.as.ejb3
+](
+110: SENTENCE: EJB timer-thread-pool
+-3)
+110: SENTENCE: JBAS014143: Timer
+34
+110: SENTENCE: ccee91-6a0e-41a8-a8d3-e1c4098b8390 is still active, skipping overlapping scheduled execution at: Wed May
+09
+110: TIME: 00:00:14
+
+110: SENTENCE: CEST
+2018
+111: TIMESTAMP: 2018-05-09 00:00:14,918
+
+111: SENTENCE: WARN
+[
+111: SENTENCE: accmopiboss01
+][
+111: PATH: org.jboss.as.ejb3
+](
+111: SENTENCE: EJB timer-thread-pool
+-1)
+111: SENTENCE: JBAS014143: Timer
+67
+111: SENTENCE: fd83a5-3bae-4e15-95e2-a0ade07e2ab6 is still active, skipping overlapping scheduled execution at: Wed May
+09
+111: TIME: 00:00:14
+
+111: SENTENCE: CEST
+2018
+112: TIMESTAMP: 2018-05-09 00:00:15,757
+
+112: SENTENCE: WARN
+[
+112: SENTENCE: accmopiboss01
+][
+112: PATH: org.jboss.as.ejb3
+](
+112: SENTENCE: EJB timer-thread-pool
+-1)
+112: SENTENCE: JBAS014143: Timer
+34
+112: SENTENCE: ccee91-6a0e-41a8-a8d3-e1c4098b8390 is still active, skipping overlapping scheduled execution at: Wed May
+09
+112: TIME: 00:00:15
+
+112: SENTENCE: CEST
+2018
+113: TIMESTAMP: 2018-05-09 00:00:15,918
+
+113: SENTENCE: WARN
+[
+113: SENTENCE: accmopiboss01
+][
+113: PATH: org.jboss.as.ejb3
+](
+113: SENTENCE: EJB timer-thread-pool
+-4)
+113: SENTENCE: JBAS014143: Timer
+67
+113: SENTENCE: fd83a5-3bae-4e15-95e2-a0ade07e2ab6 is still active, skipping overlapping scheduled execution at: Wed May
+09
+113: TIME: 00:00:15
+
+113: SENTENCE: CEST
+2018
+114: TIMESTAMP: 2018-05-09 00:00:16,757
+
+114: SENTENCE: WARN
+[
+114: SENTENCE: accmopiboss01
+][
+114: PATH: org.jboss.as.ejb3
+](
+114: SENTENCE: EJB timer-thread-pool
+-6)
+114: SENTENCE: JBAS014143: Timer
+34
+114: SENTENCE: ccee91-6a0e-41a8-a8d3-e1c4098b8390 is still active, skipping overlapping scheduled execution at: Wed May
+09
+114: TIME: 00:00:16
+
+114: SENTENCE: CEST
+2018
+115: TIMESTAMP: 2018-05-09 00:00:16,918
+
+115: SENTENCE: WARN
+[
+115: SENTENCE: accmopiboss01
+][
+115: PATH: org.jboss.as.ejb3
+](
+115: SENTENCE: EJB timer-thread-pool
+-7)
+115: SENTENCE: JBAS014143: Timer
+67
+115: SENTENCE: fd83a5-3bae-4e15-95e2-a0ade07e2ab6 is still active, skipping overlapping scheduled execution at: Wed May
+09
+115: TIME: 00:00:16
+
+115: SENTENCE: CEST
+2018
+116: TIMESTAMP: 2018-05-09 00:00:17,760
+
+116: SENTENCE: WARN
+[
+116: SENTENCE: accmopiboss01
+][
+116: PATH: org.jboss.as.ejb3
+](
+116: SENTENCE: EJB timer-thread-pool
+-4)
+116: SENTENCE: JBAS014143: Timer
+34
+116: SENTENCE: ccee91-6a0e-41a8-a8d3-e1c4098b8390 is still active, skipping overlapping scheduled execution at: Wed May
+09
+116: TIME: 00:00:17
+
+116: SENTENCE: CEST
+2018
+117: TIMESTAMP: 2018-05-09 00:00:17,918
+
+117: SENTENCE: WARN
+[
+117: SENTENCE: accmopiboss01
+][
+117: PATH: org.jboss.as.ejb3
+](
+117: SENTENCE: EJB timer-thread-pool
+-3)
+117: SENTENCE: JBAS014143: Timer
+67
+117: SENTENCE: fd83a5-3bae-4e15-95e2-a0ade07e2ab6 is still active, skipping overlapping scheduled execution at: Wed May
+09
+117: TIME: 00:00:17
+
+117: SENTENCE: CEST
+2018
+118: TIMESTAMP: 2018-05-09 00:00:18,757
+
+118: SENTENCE: WARN
+[
+118: SENTENCE: accmopiboss01
+][
+118: PATH: org.jboss.as.ejb3
+](
+118: SENTENCE: EJB timer-thread-pool
+-4)
+118: SENTENCE: JBAS014143: Timer
+34
+118: SENTENCE: ccee91-6a0e-41a8-a8d3-e1c4098b8390 is still active, skipping overlapping scheduled execution at: Wed May
+09
+118: TIME: 00:00:18
+
+118: SENTENCE: CEST
+2018
+119: TIMESTAMP: 2018-05-09 00:00:18,918
+
+119: SENTENCE: WARN
+[
+119: SENTENCE: accmopiboss01
+][
+119: PATH: org.jboss.as.ejb3
+](
+119: SENTENCE: EJB timer-thread-pool
+-3)
+119: SENTENCE: JBAS014143: Timer
+67
+119: SENTENCE: fd83a5-3bae-4e15-95e2-a0ade07e2ab6 is still active, skipping overlapping scheduled execution at: Wed May
+09
+119: TIME: 00:00:18
+
+119: SENTENCE: CEST
+2018
+120: TIMESTAMP: 2018-05-09 00:00:19,758
+
+120: SENTENCE: WARN
+[
+120: SENTENCE: accmopiboss01
+][
+120: PATH: org.jboss.as.ejb3
+](
+120: SENTENCE: EJB timer-thread-pool
+-9)
+120: SENTENCE: JBAS014143: Timer
+34
+120: SENTENCE: ccee91-6a0e-41a8-a8d3-e1c4098b8390 is still active, skipping overlapping scheduled execution at: Wed May
+09
+120: TIME: 00:00:19
+
+120: SENTENCE: CEST
+2018
+123: TIMESTAMP: 2018-05-09 02:24:39,635
+
+123: SENTENCE: WARN  accmopiboss01
+[1.0.119](70
+123: SENTENCE: f2c7ea-58eb-4750-a0ba-6545e04c86ce:
+[
+123: SENTENCE: SIM_SWAP2_PROCESS
+2.0]
+123: SENTENCE: e i1388590 D2
+)[
+123: SENTENCE: SftpLogger
+](
+123: SENTENCE: EJB async-thread-pool
+-12)
+123: SENTENCE: Permanently added
+'139.7.246.76'(
+123: SENTENCE: RSA
+)
+123: SENTENCE: to the list of known hosts
+.
+124: TIMESTAMP: 2018-05-09 02:32:51,699
+
+124: SENTENCE: WARN  accmopiboss01
+[1.0.119](
+124: SENTENCE: PSS
+#
+124: SENTENCE: SUBSCRIBER_DELETE
+#0
+124: SENTENCE: f1a5f08-7992-4b19-b869-18620b669c75:
+[
+124: SENTENCE: MOBILE_CANCELLATION_PROCESS
+1.0]
+124: SENTENCE: e i1870122 D2
+)[
+124: SENTENCE: SftpLogger
+](
+124: SENTENCE: EJB async-thread-pool
+-5)
+124: SENTENCE: Permanently added
+'139.7.246.76'(
+124: SENTENCE: RSA
+)
+124: SENTENCE: to the list of known hosts
+.
+125: TIMESTAMP: 2018-05-09 02:33:00,551
+
+125: SENTENCE: WARN  accmopiboss01
+[1.0.119](
+125: SENTENCE: PSS
+#
+125: SENTENCE: SUBSCRIBER_DELETE
+#
+125: SENTENCE: a9664451-8123-4986-9bae-27f5899d816f:
+[
+125: SENTENCE: MOBILE_CANCELLATION_PROCESS
+1.0]
+125: SENTENCE: e i4044341 D2
+)[
+125: SENTENCE: SftpLogger
+](
+125: SENTENCE: EJB async-thread-pool
+-10)
+125: SENTENCE: Permanently added
+'139.7.246.76'(
+125: SENTENCE: RSA
+)
+125: SENTENCE: to the list of known hosts
+.
+126: TIMESTAMP: 2018-05-09 02:42:06,676
+
+126: SENTENCE: WARN  accmopiboss01
+[1.0.119](1
+126: SENTENCE: f5e4e43-8857-4f86-b206-3a79a608c97c:
+[
+126: SENTENCE: mobileSupportAPI
+2.3]
+126: SENTENCE: e i1322187 D2
+)[
+126: SENTENCE: SftpLogger
+](
+126: SENTENCE: EJB async-thread-pool
+-10)
+126: SENTENCE: Permanently added
+'139.7.246.76'(
+126: SENTENCE: RSA
+)
+126: SENTENCE: to the list of known hosts
+.
+127: TIMESTAMP: 2018-05-09 02:48:42,371
+
+127: SENTENCE: WARN  accmopiboss01
+[1.0.119](
+127: SENTENCE: PSS
+#
+127: SENTENCE: SUBSCRIBER_DELETE
+#1
+127: SENTENCE: f72900a-3062-43a1-a000-8f1e399305db:
+[
+127: SENTENCE: MOBILE_CANCELLATION_PROCESS
+1.0]
+127: SENTENCE: e i11844654 D2
+)[
+127: SENTENCE: SftpLogger
+](
+127: SENTENCE: EJB async-thread-pool
+-1)
+127: SENTENCE: Permanently added
+'139.7.246.76'(
+127: SENTENCE: RSA
+)
+127: SENTENCE: to the list of known hosts
+.
+128: TIMESTAMP: 2018-05-09 02:48:49,867
+
+128: SENTENCE: WARN  accmopiboss01
+[1.0.119](
+128: SENTENCE: PSS
+#
+128: SENTENCE: SUBSCRIBER_DELETE
+#
+128: SENTENCE: e61bcc08-b15f-42f8-bb25-90dc88bf12e9:
+[
+128: SENTENCE: MOBILE_CANCELLATION_PROCESS
+1.0]
+128: SENTENCE: e i11925011 D2
+)[
+128: SENTENCE: SftpLogger
+](
+128: SENTENCE: EJB async-thread-pool
+-7)
+128: SENTENCE: Permanently added
+'139.7.246.76'(
+128: SENTENCE: RSA
+)
+128: SENTENCE: to the list of known hosts
+.
+129: TIMESTAMP: 2018-05-09 02:56:30,488
+
+129: SENTENCE: WARN  accmopiboss01
+[1.0.119](176015
+129: SENTENCE: f4-71bc-4681-8ef9-a3615fc6deb7:
+[
+129: SENTENCE: mobileSupportAPI
+2.3]
+129: SENTENCE: e i11808793 D2
+)[
+129: SENTENCE: SftpLogger
+](
+129: SENTENCE: EJB async-thread-pool
+-7)
+129: SENTENCE: Permanently added
+'139.7.246.76'(
+129: SENTENCE: RSA
+)
+129: SENTENCE: to the list of known hosts
+.
+130: TIMESTAMP: 2018-05-09 03:03:52,347
+
+130: SENTENCE: WARN  accmopiboss01
+[1.0.119](
+130: SENTENCE: PSS
+#
+130: SENTENCE: SUBSCRIBER_DELETE
+#
+130: SENTENCE: dc27f25d-a326-47a8-a8cb-0e6b10e63b9b:
+[
+130: SENTENCE: MOBILE_CANCELLATION_PROCESS
+1.0]
+130: SENTENCE: e i774753 D2
+)[
+130: SENTENCE: SftpLogger
+](
+130: SENTENCE: EJB async-thread-pool
+-9)
+130: SENTENCE: Permanently added
+'139.7.246.76'(
+130: SENTENCE: RSA
+)
+130: SENTENCE: to the list of known hosts
+.
+131: TIMESTAMP: 2018-05-09 03:04:22,668
+
+131: SENTENCE: WARN  accmopiboss01
+[1.0.119](
+131: SENTENCE: PSS
+#
+131: SENTENCE: SUBSCRIBER_DELETE
+#47
+131: SENTENCE: c759ad-52f3-48db-86a9-0141b2b04e83:
+[
+131: SENTENCE: MOBILE_CANCELLATION_PROCESS
+1.0]
+131: SENTENCE: e i3138814 D2
+)[
+131: SENTENCE: SftpLogger
+](
+131: SENTENCE: EJB async-thread-pool
+-11)
+131: SENTENCE: Permanently added
+'139.7.246.76'(
+131: SENTENCE: RSA
+)
+131: SENTENCE: to the list of known hosts
+.
+132: TIMESTAMP: 2018-05-09 03:18:58,713
+
+132: SENTENCE: WARN  accmopiboss01
+[1.0.119](
+132: SENTENCE: PSS
+#
+132: SENTENCE: SUBSCRIBER_DELETE
+#140
+132: SENTENCE: d0730-9030-4462-bb3a-8f626a1e6b48:
+[
+132: SENTENCE: MOBILE_CANCELLATION_PROCESS
+1.0]
+132: SENTENCE: e i11853856 D2
+)[
+132: SENTENCE: SftpLogger
+](
+132: SENTENCE: EJB async-thread-pool
+-12)
+132: SENTENCE: Permanently added
+'139.7.246.76'(
+132: SENTENCE: RSA
+)
+132: SENTENCE: to the list of known hosts
+.
+133: TIMESTAMP: 2018-05-09 03:19:02,074
+
+133: SENTENCE: WARN  accmopiboss01
+[1.0.119](
+133: SENTENCE: PSS
+#
+133: SENTENCE: SUBSCRIBER_DELETE
+#825
+133: SENTENCE: b0c43-db1f-4733-99df-82d8713791b8:
+[
+133: SENTENCE: MOBILE_CANCELLATION_PROCESS
+1.0]
+133: SENTENCE: e i710705 D2
+)[
+133: SENTENCE: SftpLogger
+](
+133: SENTENCE: EJB async-thread-pool
+-9)
+133: SENTENCE: Permanently added
+'139.7.246.76'(
+133: SENTENCE: RSA
+)
+133: SENTENCE: to the list of known hosts
+.
+134: TIMESTAMP: 2018-05-09 03:34:17,000
+
+134: SENTENCE: WARN  accmopiboss01
+[1.0.119](
+134: SENTENCE: PSS
+#
+134: SENTENCE: SUBSCRIBER_DELETE
+#
+134: SENTENCE: fdd5a59a-0151-48b8-94f6-e660424e79ec:
+[
+134: SENTENCE: MOBILE_CANCELLATION_PROCESS
+1.0]
+134: SENTENCE: e i2869310 D2
+)[
+134: SENTENCE: SftpLogger
+](
+134: SENTENCE: EJB async-thread-pool
+-7)
+134: SENTENCE: Permanently added
+'139.7.246.76'(
+134: SENTENCE: RSA
+)
+134: SENTENCE: to the list of known hosts
+.
+136: TIMESTAMP: 2018-05-09 02:32:03,949
+
+136: LEVEL: DEBUG
+[
+136: SENTENCE: accmopiboss01
+][
+136: PATH: com.oneandone.infrro.spp.timers.timers_subsystem.jobs.QuartzJobAdapter
+](
+136: SENTENCE: mssScheduler_Worker-1
+)
+137: SENTENCE: starting job SftpHousekeepingSp109TelefonicaScheduler_1_0
+
+
+137: TIMESTAMP: 2018-05-09 02:32:03,949
+
+137: LEVEL: DEBUG
+[
+137: SENTENCE: accmopiboss01
+][
+137: PATH: com.oneandone.infrro.spp.timers.timers_subsystem.jobs.EventInvoker
+](
+137: SENTENCE: QuartzJobAdapter-Thread
+)
+137: SENTENCE: invoking mss-job-management-v1
+.0.
+137: PATH: war.com.oneandone.access.mobile.mss.scheduler.impl.SftpHousekeepingSp109TelefonicaScheduler
+
+138: TIMESTAMP: 2018-05-09 02:32:05,037
+
+138: LEVEL: DEBUG
+[
+138: SENTENCE: accmopiboss01
+][
+138: PATH: com.oneandone.infrro.spp.timers.timers_subsystem.jobs.EventInvoker
+](
+138: SENTENCE: QuartzJobAdapter-Thread
+)
+138: SENTENCE: finnished invoking mss-job-management-v1
+.0.
+138: PATH: war.com.oneandone.access.mobile.mss.scheduler.impl.SftpHousekeepingSp109TelefonicaScheduler
+
+139: TIMESTAMP: 2018-05-09 02:32:05,037
+
+139: LEVEL: DEBUG
+[
+139: SENTENCE: accmopiboss01
+][
+139: PATH: com.oneandone.infrro.spp.timers.timers_subsystem.jobs.QuartzJobAdapter
+](
+139: SENTENCE: mssScheduler_Worker-1
+)
+140: SENTENCE: done job invocation SftpHousekeepingSp109TelefonicaScheduler_1_0
+
+
+140: TIMESTAMP: 2018-05-09 02:42:03,794
+
+140: LEVEL: DEBUG
+[
+140: SENTENCE: accmopiboss01
+][
+140: PATH: com.oneandone.infrro.spp.timers.timers_subsystem.jobs.QuartzJobAdapter
+](
+140: SENTENCE: mssScheduler_Worker-2
+)
+140: SENTENCE: RemoveSubscriberScheduler_1_0
+-
+141: SENTENCE: Status OK
+
+
+141: TIMESTAMP: 2018-05-09 02:42:03,795
+
+141: LEVEL: DEBUG
+[
+141: SENTENCE: accmopiboss01
+][
+141: PATH: com.oneandone.infrro.spp.timers.timers_subsystem.jobs.QuartzJobAdapter
+](
+141: SENTENCE: mssScheduler_Worker-2
+)
+142: SENTENCE: starting job RemoveSubscriberScheduler_1_0
+
+
+142: TIMESTAMP: 2018-05-09 02:42:03,795
+
+142: LEVEL: DEBUG
+[
+142: SENTENCE: accmopiboss01
+][
+142: PATH: com.oneandone.infrro.spp.timers.timers_subsystem.jobs.EventInvoker
+](
+142: SENTENCE: QuartzJobAdapter-Thread
+)
+142: SENTENCE: invoking mss-job-management-v1
+.0.
+142: PATH: war.com.oneandone.access.mobile.mss.scheduler.impl.RemoveSubscriberScheduler
+
+143: TIMESTAMP: 2018-05-09 02:42:04,272
+
+143: LEVEL: DEBUG
+[
+143: SENTENCE: accmopiboss01
+][
+143: PATH: com.oneandone.infrro.spp.timers.timers_subsystem.jobs.QuartzJobAdapter
+](
+143: SENTENCE: mssScheduler_Worker-3
+)
+143: SENTENCE: SftpHousekeepingSp004TelefonicaScheduler_1_0
+-
+144: SENTENCE: Status OK
+
+
+144: TIMESTAMP: 2018-05-09 02:42:04,272
+
+144: LEVEL: DEBUG
+[
+144: SENTENCE: accmopiboss01
+][
+144: PATH: com.oneandone.infrro.spp.timers.timers_subsystem.jobs.QuartzJobAdapter
+](
+144: SENTENCE: mssScheduler_Worker-3
+)
+145: SENTENCE: starting job SftpHousekeepingSp004TelefonicaScheduler_1_0
+
+
+145: TIMESTAMP: 2018-05-09 02:42:04,272
+
+145: LEVEL: DEBUG
+[
+145: SENTENCE: accmopiboss01
+][
+145: PATH: com.oneandone.infrro.spp.timers.timers_subsystem.jobs.EventInvoker
+](
+145: SENTENCE: QuartzJobAdapter-Thread
+)
+145: SENTENCE: invoking mss-job-management-v1
+.0.
+145: PATH: war.com.oneandone.access.mobile.mss.scheduler.impl.SftpHousekeepingSp004TelefonicaScheduler
+
+146: TIMESTAMP: 2018-05-09 02:42:08,644
+
+146: LEVEL: DEBUG
+[
+146: SENTENCE: accmopiboss01
+][
+146: PATH: com.oneandone.infrro.spp.timers.timers_subsystem.jobs.EventInvoker
+](
+146: SENTENCE: QuartzJobAdapter-Thread
+)
+146: SENTENCE: finnished invoking mss-job-management-v1
+.0.
+146: PATH: war.com.oneandone.access.mobile.mss.scheduler.impl.SftpHousekeepingSp004TelefonicaScheduler
+
+147: TIMESTAMP: 2018-05-09 02:42:08,644
+
+147: LEVEL: DEBUG
+[
+147: SENTENCE: accmopiboss01
+][
+147: PATH: com.oneandone.infrro.spp.timers.timers_subsystem.jobs.QuartzJobAdapter
+](
+147: SENTENCE: mssScheduler_Worker-3
+)
+148: SENTENCE: done job invocation SftpHousekeepingSp004TelefonicaScheduler_1_0
+
+
+148: TIMESTAMP: 2018-05-09 02:45:32,554
+
+148: LEVEL: DEBUG
+[
+148: SENTENCE: accmopiboss01
+][
+148: PATH: com.oneandone.infrro.spp.timers.timers_subsystem.jobs.EventInvoker
+](
+148: SENTENCE: QuartzJobAdapter-Thread
+)
+148: SENTENCE: finnished invoking mss-job-management-v1
+.0.
+148: PATH: war.com.oneandone.access.mobile.mss.scheduler.impl.RemoveSubscriberScheduler
+
+149: TIMESTAMP: 2018-05-09 02:45:32,554
+
+149: LEVEL: DEBUG
+[
+149: SENTENCE: accmopiboss01
+][
+149: PATH: com.oneandone.infrro.spp.timers.timers_subsystem.jobs.QuartzJobAdapter
+](
+149: SENTENCE: mssScheduler_Worker-2
+)
+150: SENTENCE: done job invocation RemoveSubscriberScheduler_1_0
+
+
+150: TIMESTAMP: 2018-05-09 02:47:04,084
+
+150: LEVEL: DEBUG
+[
+150: SENTENCE: accmopiboss01
+][
+150: PATH: com.oneandone.infrro.spp.timers.timers_subsystem.jobs.QuartzJobAdapter
+](
+150: SENTENCE: mssScheduler_Worker-1
+)
+150: SENTENCE: SftpHousekeepingSp004TelefonicaScheduler_1_0
+-
+151: SENTENCE: Status OK
+
+
+151: TIMESTAMP: 2018-05-09 02:47:04,084
+
+151: LEVEL: DEBUG
+[
+151: SENTENCE: accmopiboss01
+][
+151: PATH: com.oneandone.infrro.spp.timers.timers_subsystem.jobs.QuartzJobAdapter
+](
+151: SENTENCE: mssScheduler_Worker-1
+)
+152: SENTENCE: starting job SftpHousekeepingSp004TelefonicaScheduler_1_0
+
+
+152: TIMESTAMP: 2018-05-09 02:47:04,084
+
+152: LEVEL: DEBUG
+[
+152: SENTENCE: accmopiboss01
+][
+152: PATH: com.oneandone.infrro.spp.timers.timers_subsystem.jobs.EventInvoker
+](
+152: SENTENCE: QuartzJobAdapter-Thread
+)
+152: SENTENCE: invoking mss-job-management-v1
+.0.
+152: PATH: war.com.oneandone.access.mobile.mss.scheduler.impl.SftpHousekeepingSp004TelefonicaScheduler
+
+153: TIMESTAMP: 2018-05-09 02:47:09,115
+
+153: LEVEL: DEBUG
+[
+153: SENTENCE: accmopiboss01
+][
+153: PATH: com.oneandone.infrro.spp.timers.timers_subsystem.jobs.EventInvoker
+](
+153: SENTENCE: QuartzJobAdapter-Thread
+)
+153: SENTENCE: finnished invoking mss-job-management-v1
+.0.
+153: PATH: war.com.oneandone.access.mobile.mss.scheduler.impl.SftpHousekeepingSp004TelefonicaScheduler
+
+155: TIMESTAMP: 2018-05-10T15:45:38+02:00
+
+157: TIMESTAMP: 2018-05-10T15:45:38.111+02:00
+
+158: TIMESTAMP: 2018-05-10T15:45:38.111Z
+
+159: TIMESTAMP: 2018-05-10T15:45:38,111+02:00
+
+160: TIMESTAMP: 2018-05-10T15:45:38,111Z
+
+161: TIMESTAMP: 2018-05-10T15:45:38Z
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.192 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.752 s
+[INFO] Finished at: 2018-05-10T19:16:11+02:00
+[INFO] Final Memory: 38M/432M
+[INFO] ------------------------------------------------------------------------
+
+Process finished with exit code 0
+
+
+00000000-0000-0000-0000-000000000000
+
+00AA0000-0000-0000-0000-0000000aa000
 
 
 

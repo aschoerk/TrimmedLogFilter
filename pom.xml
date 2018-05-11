@@ -73,13 +73,32 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>src/main/java</outputDirectory>
+                            <outputDirectory>target/generated-sources</outputDirectory>
                             <lexDefinitions>
                                 <lexDefinition>src/main/lex/lexer.flex</lexDefinition>
                             </lexDefinitions>
                         </configuration>
                     </execution>
-
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>target/generated-sources</source>
+                                <source>src/main/java</source>
+                            </sources>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
         </plugins>
