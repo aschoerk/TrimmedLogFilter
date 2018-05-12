@@ -21,4 +21,13 @@ class Test {
         } while (res != null);
 
     }
+
+    @Test
+    fun test2() {
+        val filter = LogFilter()
+
+        filter.learn("2018 sentence 1\nanother sentence\nsentence 2")
+        // filter.lines.
+
+    }
 }

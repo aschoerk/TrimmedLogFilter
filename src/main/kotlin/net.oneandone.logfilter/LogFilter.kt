@@ -5,29 +5,38 @@ import java.io.StringReader
 
 class LogFilter {
 
+    private val backinglines = HashSet<Line>()
+
+
+    public val lines
+        get() = backinglines
+
+
+    class Line(val no: Int, val symbols: MutableList<Symbol>) {
+        override fun equals(other: Any?): Boolean {
+            if (this === other) return true
+            if (javaClass != other?.javaClass) return false
+
+            other as Line
+
+            if (no != other.no) return false
+
+            return true
+        }
+
+        override fun hashCode(): Int {
+            return no
+        }
+    }
+
+
+
 
     fun learn(s: String) {
 
         val scanner = net.oneandone.loganalyzer.LogAnalyzerLexer(StringReader(s))
 
         var res: Symbol?
-        class Line(val no: Int, val symbols: MutableList<Symbol>) {
-            override fun equals(other: Any?): Boolean {
-                if (this === other) return true
-                if (javaClass != other?.javaClass) return false
-
-                other as Line
-
-                if (no != other.no) return false
-
-                return true
-            }
-
-            override fun hashCode(): Int {
-                return no
-            }
-        }
-        val lines = HashSet<Line>()
         var currentLine: Line? = null
         do {
             res = scanner.yylex();
