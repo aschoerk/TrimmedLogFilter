@@ -2,9 +2,9 @@ package net.oneandone.loganalyzer
 
 import net.oneandone.loganalyzer.LogAnalyzerLexer
 import net.oneandone.loganalyzer.helpers.Symbol
-import org.junit.Test
 import java.io.StringReader
 import java.nio.charset.Charset
+import kotlin.test.Test
 
 class Test {
     @Test
@@ -26,8 +26,11 @@ class Test {
     fun test2() {
         val filter = LogFilter()
 
-        filter.learn("2018 sentence 1\nanother sentence\nsentence 2")
-        // filter.lines.
+        filter.learn("2018 sentence 1\nanother sentence\n2018-01-01 sentence 2\n")
+        println()
+        filter.lines.keys.sorted().forEach {
+            println("$it: ${filter.lines[it]}")
+        }
 
     }
 }

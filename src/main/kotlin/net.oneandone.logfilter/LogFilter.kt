@@ -1,12 +1,14 @@
 package net.oneandone.loganalyzer
 
 import net.oneandone.loganalyzer.helpers.Symbol
+import org.apache.commons.codec.digest.DigestUtils
 import java.io.StringReader
+import java.security.MessageDigest
 
 class LogFilter {
+    private val md5gen = MessageDigest.getInstance("MD5")
 
-    private val backinglines = HashSet<Line>()
-
+    private val backinglines = mutableMapOf<Int,Line>()
 
     public val lines
         get() = backinglines
@@ -27,6 +29,20 @@ class LogFilter {
         override fun hashCode(): Int {
             return no
         }
+
+        override fun toString(): String {
+            return "Line(no=$no, symbols=$symbols)"
+        }
+
+        val md5: List<Byte>
+            get() {
+                var res = mutableListOf<Byte>()
+                symbols.forEach {
+                    res.addAll(it.md5().asList())
+                }
+                return res
+            }
+
     }
 
 
@@ -44,10 +60,8 @@ class LogFilter {
                 break;
             }
             if (currentLine == null || currentLine.no != res.line) {
-                if (currentLine != null) {
-                    lines.add(currentLine);
-                }
                 currentLine = Line(res.line, mutableListOf(res))
+                lines[currentLine.no] = currentLine
             } else {
                 currentLine.symbols.add(res)
             }

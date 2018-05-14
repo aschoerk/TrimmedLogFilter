@@ -1,11 +1,16 @@
 package net.oneandone.loganalyzer.helpers;
 
+import org.apache.commons.codec.digest.DigestUtils;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 public class Symbol {
     private final Sym s;
     private final int line;
     private final int column;
-    private final Object value;
     private final String text;
+
 
     public static enum Sym {
         DATE, TIME, TIMESTAMP, GUID,
@@ -16,16 +21,31 @@ public class Symbol {
         HEX_INTEGER_LITERAL
     }
 
-    public Symbol(Sym s, int line, int column, String text, Object value) {
+    public Symbol(Sym s, int line, int column, String text) {
         this.s = s;
         this.line = line;
         this.column = column;
         this.text = text;
-        this.value = value;
     }
 
-    public Symbol(Sym s, int line, int column, String text) {
-        this(s,line,column, text, null);
+    byte[] ordinalAsByteArray(Sym s) {
+        int val = s.ordinal();
+        byte[] res = new byte[4];
+        res[0] = (byte)(val & 0xFF);
+        res[1] = (byte)(val >> 8 & 0xFF);
+        res[2] = (byte)(val >> 16 & 0xFF);
+        res[3] = (byte)(val >> 24 & 0xFF);
+        return res;
+    }
+
+    public byte[] md5() {
+        switch (s) {
+            case PATH:
+            case SENTENCE: return DigestUtils.md5(text);
+            default:
+                return ordinalAsByteArray(s);
+
+        }
     }
 
     public Sym getS() {
@@ -40,12 +60,18 @@ public class Symbol {
         return column;
     }
 
-    public Object getValue() {
-        return value;
-    }
-
     public String getText() {
         return text;
+    }
+
+    private String md5Hex() {
+        switch (s) {
+            case PATH:
+            case SENTENCE: return DigestUtils.md5Hex(text);
+            default:
+                return Integer.toHexString(s.ordinal());
+
+        }
     }
 
     @Override
@@ -54,8 +80,8 @@ public class Symbol {
                "s=" + s +
                ", line=" + line +
                ", column=" + column +
-               ", value=" + value +
-               ", text='" + text + '\'' +
+                ", md5=" + md5Hex() +
+                ", text='" + text + '\'' +
                '}';
     }
 }

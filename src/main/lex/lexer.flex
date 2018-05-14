@@ -33,9 +33,6 @@ import net.oneandone.loganalyzer.helpers.Symbol.Sym;
   private Symbol symbol(Sym type, StringBuffer text) {
       return new Symbol(type, yyline, yycolumn, text.toString());
   }
-  private Symbol symbol(Sym type, Object value) {
-    return new Symbol(type, yyline, yycolumn, yytext(), value);
-  }
 %}
 
 
@@ -109,7 +106,7 @@ Guid = [a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{1
 
    {Word} { sentence.append(yytext()); }
 
-   ({MiddleOfSentenceSeparator} | {WhiteSpace})+ { sentence.append(yytext()); }
+   ({MiddleOfSentenceSeparator} | [ \t\f])+ { sentence.append(yytext()); }
 
    [^]
    ({EndOfSentenceSeparator}|LineTerminator)? {
