@@ -23,14 +23,18 @@ import net.oneandone.loganalyzer.helpers.Symbol.Sym;
 %{
 
 
-  StringBuffer sentence = new StringBuffer();
+  StringBuilder sentence = new StringBuilder();
+
+  String lastLine = null;
+
+  StringBuilder line = new StringBuilder();
 
 
   private Symbol symbol(Sym type) {
     return new Symbol(type, yyline, yycolumn, yytext());
   }
 
-  private Symbol symbol(Sym type, StringBuffer text) {
+  private Symbol symbol(Sym type, StringBuilder text) {
       return new Symbol(type, yyline, yycolumn, text.toString());
   }
 %}
@@ -78,46 +82,59 @@ Guid = [a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{1
 <YYINITIAL> {
 
   \[{Level}\]
-  | {Level}   { return symbol(Sym.LEVEL); }
+  | {Level}   { line.append(yytext()); return symbol(Sym.LEVEL); }
 
-  {Word} { sentence = new StringBuffer(yytext()); yybegin(SENTENCE); }
+  {Word} { line.append(yytext()); sentence = new StringBuilder(yytext()); yybegin(SENTENCE); }
 
-  {OrderedDate}   { return symbol(Sym.DATE); }
+  {OrderedDate}   { line.append(yytext()); return symbol(Sym.DATE); }
 
-  {OrderedTime}   { return symbol(Sym.TIME); }
+  {OrderedTime}   { line.append(yytext()); return symbol(Sym.TIME); }
 
-  {Timestamp}  { return symbol(Sym.TIMESTAMP); }
-
-
-  {Guid} { return symbol(Sym.GUID); }
+  {Timestamp}  { line.append(yytext()); return symbol(Sym.TIMESTAMP); }
 
 
-  {ClassOrPackagePath} { return symbol(Sym.PATH); }
+  {Guid} { line.append(yytext()); return symbol(Sym.GUID); }
+
+
+  {ClassOrPackagePath} { line.append(yytext()); return symbol(Sym.PATH); }
 
 
   // {DecIntegerLiteral}            {} // { return symbol(Sym.DEC_INTEGER_LITERAL); }
   // {BinIntegerLiteral}            {} // { return symbol(Sym.BIN_INTEGER_LITERAL); }
   // {HexIntegerLiteral}            {} // { return symbol(Sym.HEX_INTEGER_LITERAL); }
 
-  {WhiteSpace}                   { /* ignore */ }
+
+  {LineTerminator} { lastLine = line.toString(); line.setLength(0); }
+
+  {WhiteSpace}                   { line.append(yytext()); }
 }
 
 <SENTENCE> {
 
-   {Word} { sentence.append(yytext()); }
+   {Word} { line.append(yytext()); sentence.append(yytext()); }
 
-   ({MiddleOfSentenceSeparator} | [ \t\f])+ { sentence.append(yytext()); }
+   ({MiddleOfSentenceSeparator} | [ \t\f])+ { line.append(yytext()); sentence.append(yytext()); }
+
+    {LineTerminator} {
+            lastLine = line.toString();
+            line.setLength(0);
+            yybegin(YYINITIAL);
+            yypushback(yytext().length());
+            return symbol(Sym.SENTENCE, sentence);
+    }
+
 
    [^]
-   ({EndOfSentenceSeparator}|LineTerminator)? {
+   ({EndOfSentenceSeparator})? {
+            line.append(yytext());
             yybegin(YYINITIAL);
             yypushback(yytext().length());
             return symbol(Sym.SENTENCE, sentence);
         }
 
-
-
 }
 
 /* error fallback */
-[^]                              { System.out.print(yytext()); }
+[^]                              {
+    line.append(yytext());
+}

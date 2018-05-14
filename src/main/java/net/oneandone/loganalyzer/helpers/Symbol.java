@@ -64,13 +64,12 @@ public class Symbol {
         return text;
     }
 
-    private String md5Hex() {
+    public int hash() {
         switch (s) {
             case PATH:
-            case SENTENCE: return DigestUtils.md5Hex(text);
+            case SENTENCE: return text.hashCode();
             default:
-                return Integer.toHexString(s.ordinal());
-
+                return s.ordinal();
         }
     }
 
@@ -80,7 +79,7 @@ public class Symbol {
                "s=" + s +
                ", line=" + line +
                ", column=" + column +
-                ", md5=" + md5Hex() +
+                ", hash=" + hash() +
                 ", text='" + text + '\'' +
                '}';
     }

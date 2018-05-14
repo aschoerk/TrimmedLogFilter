@@ -25,12 +25,10 @@ class Test {
     @Test
     fun test2() {
         val filter = LogFilter()
-
         filter.learn("2018 sentence 1\nanother sentence\n2018-01-01 sentence 2\n")
-        println()
-        filter.lines.keys.sorted().forEach {
-            println("$it: ${filter.lines[it]}")
-        }
+        val res = filter.filter("2018 sentence 1\nanother sentence2\n2018-01-01 sentence 2\n")
+        assert(res.size == 1)
+        assert(res[0] == "another sentence2\n");
 
     }
 }
