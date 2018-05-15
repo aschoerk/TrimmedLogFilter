@@ -28,26 +28,6 @@ public class Symbol {
         this.text = text;
     }
 
-    byte[] ordinalAsByteArray(Sym s) {
-        int val = s.ordinal();
-        byte[] res = new byte[4];
-        res[0] = (byte)(val & 0xFF);
-        res[1] = (byte)(val >> 8 & 0xFF);
-        res[2] = (byte)(val >> 16 & 0xFF);
-        res[3] = (byte)(val >> 24 & 0xFF);
-        return res;
-    }
-
-    public byte[] md5() {
-        switch (s) {
-            case PATH:
-            case SENTENCE: return DigestUtils.md5(text);
-            default:
-                return ordinalAsByteArray(s);
-
-        }
-    }
-
     public Sym getS() {
         return s;
     }

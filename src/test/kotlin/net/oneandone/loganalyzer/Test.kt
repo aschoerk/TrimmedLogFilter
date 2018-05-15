@@ -5,6 +5,7 @@ import net.oneandone.loganalyzer.helpers.Symbol
 import java.io.StringReader
 import java.nio.charset.Charset
 import kotlin.test.Test
+import kotlin.test.assertEquals
 
 class Test {
     @Test
@@ -26,9 +27,9 @@ class Test {
     fun test2() {
         val filter = LogFilter()
         filter.learn("2018 sentence 1\nanother sentence\n2018-01-01 sentence 2\n")
-        val res = filter.filter("2018 sentence 1\nanother sentence2\n2018-01-01 sentence 2\n")
-        assert(res.size == 1)
-        assert(res[0] == "another sentence2\n");
+        val res = filter.filter("2018 sentence 1\nanother sentenceX\n2018-01-01 sentence 2\n")
+        assertEquals(1, res.size)
+        assertEquals("another sentenceX\n", res[0]);
 
     }
 }

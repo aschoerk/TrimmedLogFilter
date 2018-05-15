@@ -104,7 +104,13 @@ Guid = [a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{1
   // {HexIntegerLiteral}            {} // { return symbol(Sym.HEX_INTEGER_LITERAL); }
 
 
-  {LineTerminator} { lastLine = line.toString(); line.setLength(0); }
+  {LineTerminator} {
+      if (line.length() > 0) {
+        line.append(yytext());
+        lastLine = line.toString();
+              line.setLength(0);
+            }
+      }
 
   {WhiteSpace}                   { line.append(yytext()); }
 }
@@ -116,17 +122,17 @@ Guid = [a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{1
    ({MiddleOfSentenceSeparator} | [ \t\f])+ { line.append(yytext()); sentence.append(yytext()); }
 
     {LineTerminator} {
+            line.append(yytext());
             lastLine = line.toString();
             line.setLength(0);
             yybegin(YYINITIAL);
-            yypushback(yytext().length());
             return symbol(Sym.SENTENCE, sentence);
     }
 
 
    [^]
    ({EndOfSentenceSeparator})? {
-            line.append(yytext());
+            // don't append here to line, is pushed back. Otherwise double append would happen!!!
             yybegin(YYINITIAL);
             yypushback(yytext().length());
             return symbol(Sym.SENTENCE, sentence);
