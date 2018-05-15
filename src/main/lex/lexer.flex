@@ -37,6 +37,10 @@ import net.oneandone.loganalyzer.helpers.Symbol.Sym;
   private Symbol symbol(Sym type, StringBuilder text) {
       return new Symbol(type, yyline, yycolumn, text.toString());
   }
+
+  private Symbol symbol(Sym type, String text) {
+      return new Symbol(type, yyline, yycolumn, text);
+  }
 %}
 
 
@@ -55,6 +59,9 @@ Word = [:jletter:]([-]?[:jletterdigit:])*
 
 ClassOrPackagePath = {Word}(\.{Word})*
 
+ExceptionClassOrPackagePath = {LineTerminator}{WhiteSpace}*{Word}(\.{Word})*:
+
+ExceptionLine = [a][t]{WhiteSpace}{ClassOrPackagePath}((\({ClassOrPackagePath}:[0-9]*\))|(\(Native\ Method\)))
 
 Sentence = {Word} (({MiddleOfSentenceSeparator} | {WhiteSpace})+ {Word})+ ({EndOfSentenceSeparator}|LineTerminator)?
 
@@ -74,9 +81,29 @@ HexIntegerLiteral = 0 | [1-9a-fA-F][0-9a-fA-F]*
 Guid = [a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}
 
 
-%state YYINITIAL SENTENCE
+%state YYINITIAL SENTENCE EXCEPTION
 
 %%
+
+<EXCEPTION> {
+
+
+  {LineTerminator} { line.append(yytext()); }
+
+  {WhiteSpace} { line.append(yytext()); }
+
+
+  {LineTerminator}{WhiteSpace}+{ExceptionLine} { line.append(yytext());}
+
+  [^] {
+        line.append(yytext());
+        lastLine = line.toString();
+        line.setLength(0);
+        yybegin(YYINITIAL);
+        return symbol(Sym.EXCEPTION, lastLine);
+      }
+
+}
 
 
 <YYINITIAL> {
@@ -96,7 +123,11 @@ Guid = [a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{1
   {Guid} { line.append(yytext()); return symbol(Sym.GUID); }
 
 
+  {ExceptionClassOrPackagePath}{WhiteSpace}.*{LineTerminator} { line.append(yytext()); yybegin(EXCEPTION); }
+
   {ClassOrPackagePath} { line.append(yytext()); return symbol(Sym.PATH); }
+
+
 
 
   // {DecIntegerLiteral}            {} // { return symbol(Sym.DEC_INTEGER_LITERAL); }

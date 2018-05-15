@@ -14,7 +14,7 @@ public class Symbol {
 
     public static enum Sym {
         DATE, TIME, TIMESTAMP, GUID,
-        LEVEL, SENTENCE, WORD,
+        LEVEL, SENTENCE, EXCEPTION, WORD,
         PATH,
         BIN_INTEGER_LITERAL,
         DEC_INTEGER_LITERAL,
