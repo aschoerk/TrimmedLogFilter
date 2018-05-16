@@ -17,6 +17,7 @@ import net.oneandone.loganalyzer.helpers.Symbol.Sym;
 %line
 %column
 %public
+%caseless
 
 %type Symbol
 
@@ -47,7 +48,7 @@ import net.oneandone.loganalyzer.helpers.Symbol.Sym;
 
 Level = ERROR | FAILURE | WARNING | INFO | DEBUG | TRACE
 
-LineTerminator = \r|\n|\r\n
+LineTerminator = [ä] // \r|\n|\r\n
 InputCharacter = [^\r\n]
 WhiteSpace     = {LineTerminator} | [ \t\f]
 EndOfSentenceSeparator = [.!?]
@@ -59,7 +60,7 @@ Word = [:jletter:]([-]?[:jletterdigit:])*
 
 ClassOrPackagePath = {Word}(\.{Word})*
 
-ExceptionClassOrPackagePath = {LineTerminator}{WhiteSpace}*{Word}(\.{Word})*:
+ExceptionClassOrPackagePath = {Word}(\.{Word})*\:{WhiteSpace}.*
 
 ExceptionLine = [a][t]{WhiteSpace}{ClassOrPackagePath}((\({ClassOrPackagePath}:[0-9]*\))|(\(Native\ Method\)))
 
@@ -88,17 +89,15 @@ Guid = [a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{1
 <EXCEPTION> {
 
 
-  {LineTerminator} { line.append(yytext()); }
-
   {WhiteSpace} { line.append(yytext()); }
 
 
-  {LineTerminator}{WhiteSpace}+{ExceptionLine} { line.append(yytext());}
+  {WhiteSpace}+{ExceptionLine} { line.append(yytext());}
 
   [^] {
-        line.append(yytext());
         lastLine = line.toString();
         line.setLength(0);
+        yypushback(yytext().length());
         yybegin(YYINITIAL);
         return symbol(Sym.EXCEPTION, lastLine);
       }
@@ -123,7 +122,11 @@ Guid = [a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{1
   {Guid} { line.append(yytext()); return symbol(Sym.GUID); }
 
 
-  {ExceptionClassOrPackagePath}{WhiteSpace}.*{LineTerminator} { line.append(yytext()); yybegin(EXCEPTION); }
+  {Word}(\.{Word})+\:.{5}  {
+         line.setLength(0);
+         line.append(yytext());
+         yybegin(EXCEPTION);
+     }
 
   {ClassOrPackagePath} { line.append(yytext()); return symbol(Sym.PATH); }
 
@@ -153,9 +156,9 @@ Guid = [a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{1
    ({MiddleOfSentenceSeparator} | [ \t\f])+ { line.append(yytext()); sentence.append(yytext()); }
 
     {LineTerminator} {
-            line.append(yytext());
             lastLine = line.toString();
             line.setLength(0);
+            yypushback(yytext().length());
             yybegin(YYINITIAL);
             return symbol(Sym.SENTENCE, sentence);
     }

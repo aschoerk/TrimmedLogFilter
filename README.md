@@ -16,3 +16,5 @@ Method to filter logs so that only the currently important new content is shown
 
 Idea:
 
+jflex doku see:
+http://jflex.de/manual.html

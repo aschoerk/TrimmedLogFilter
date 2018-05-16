@@ -82,6 +82,7 @@
                             <lexDefinitions>
                                 <lexDefinition>src/main/lex/lexer.flex</lexDefinition>
                             </lexDefinitions>
+                            <jlex>true</jlex>
                         </configuration>
                     </execution>
                 </executions>
