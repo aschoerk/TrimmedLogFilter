@@ -82,7 +82,10 @@
                             <lexDefinitions>
                                 <lexDefinition>src/main/lex/lexer.flex</lexDefinition>
                             </lexDefinitions>
-                            <jlex>true</jlex>
+                            <jlex>false</jlex>
+                            <minimize>false</minimize>
+                            <dump>false</dump>
+                            <verbose>true</verbose>
                         </configuration>
                     </execution>
                 </executions>

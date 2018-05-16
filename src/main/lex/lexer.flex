@@ -12,12 +12,13 @@ import net.oneandone.loganalyzer.helpers.Symbol.Sym;
 
 %%
 
-%class LogAnalyzerLexer
 %unicode
+
+%class LogAnalyzerLexer
+
 %line
-%column
+
 %public
-%caseless
 
 %type Symbol
 
@@ -30,17 +31,21 @@ import net.oneandone.loganalyzer.helpers.Symbol.Sym;
 
   StringBuilder line = new StringBuilder();
 
+  private void printRule(String s) {
+      System.out.println("\n**** Rule: " + s + " ****\n   +++++ " + yytext() + " +++++\n");
+  }
+
 
   private Symbol symbol(Sym type) {
-    return new Symbol(type, yyline, yycolumn, yytext());
+    return new Symbol(type, yyline, yytext());
   }
 
   private Symbol symbol(Sym type, StringBuilder text) {
-      return new Symbol(type, yyline, yycolumn, text.toString());
+      return new Symbol(type, yyline, text.toString());
   }
 
   private Symbol symbol(Sym type, String text) {
-      return new Symbol(type, yyline, yycolumn, text);
+      return new Symbol(type, yyline, text);
   }
 %}
 
@@ -48,7 +53,8 @@ import net.oneandone.loganalyzer.helpers.Symbol.Sym;
 
 Level = ERROR | FAILURE | WARNING | INFO | DEBUG | TRACE
 
-LineTerminator = [ä] // \r|\n|\r\n
+
+LineTerminator = \r|\n|\r\n
 InputCharacter = [^\r\n]
 WhiteSpace     = {LineTerminator} | [ \t\f]
 EndOfSentenceSeparator = [.!?]
@@ -62,7 +68,7 @@ ClassOrPackagePath = {Word}(\.{Word})*
 
 ExceptionClassOrPackagePath = {Word}(\.{Word})*\:{WhiteSpace}.*
 
-ExceptionLine = [a][t]{WhiteSpace}{ClassOrPackagePath}((\({ClassOrPackagePath}:[0-9]*\))|(\(Native\ Method\)))
+ExceptionLine = at\ {ClassOrPackagePath}((\({ClassOrPackagePath}:[0-9]*\))|(\(Native\ Method\)))
 
 Sentence = {Word} (({MiddleOfSentenceSeparator} | {WhiteSpace})+ {Word})+ ({EndOfSentenceSeparator}|LineTerminator)?
 
@@ -88,13 +94,24 @@ Guid = [a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{1
 
 <EXCEPTION> {
 
+  ^{WhiteSpace}+{ExceptionLine}
+     { printRule("exc ws excline"); line.append(yytext());}
 
-  {WhiteSpace} { line.append(yytext()); }
+  ^Caused\ by:\ .*$
+     { printRule("exc caused by"); line.append(yytext());}
 
+  ^{WhiteSpace}+\.\.\.\ [0-9]+\ more$
+     { printRule("exc more"); line.append(yytext());}
 
-  {WhiteSpace}+{ExceptionLine} { line.append(yytext());}
+  ({WhiteSpace}[\[][^\]]+[\]])$ {
+    printRule("artifact extension");
+    line.append(yytext());
+  }
+
+  {LineTerminator} { printRule("exc ws"); line.append(yytext()); }
 
   [^] {
+        printRule("exc ws else");
         lastLine = line.toString();
         line.setLength(0);
         yypushback(yytext().length());
@@ -108,27 +125,38 @@ Guid = [a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{1
 <YYINITIAL> {
 
   \[{Level}\]
-  | {Level}   { line.append(yytext()); return symbol(Sym.LEVEL); }
+  | {Level}   { printRule("ini level"); line.append(yytext()); return symbol(Sym.LEVEL); }
 
-  {Word} { line.append(yytext()); sentence = new StringBuilder(yytext()); yybegin(SENTENCE); }
+  ^U+00E4*\]  { printRule("ini Y"); line.append(yytext()); return symbol(Sym.TIMESTAMP); }
 
-  {OrderedDate}   { line.append(yytext()); return symbol(Sym.DATE); }
+  {Word} { printRule("ini word"); line.append(yytext()); sentence = new StringBuilder(yytext()); yybegin(SENTENCE); }
 
-  {OrderedTime}   { line.append(yytext()); return symbol(Sym.TIME); }
+  {OrderedDate}   { printRule("ini date"); line.append(yytext()); return symbol(Sym.DATE); }
 
-  {Timestamp}  { line.append(yytext()); return symbol(Sym.TIMESTAMP); }
+  {OrderedTime}   { printRule("ini time"); line.append(yytext()); return symbol(Sym.TIME); }
+
+  {Timestamp}  { printRule("ini timestamp"); line.append(yytext()); return symbol(Sym.TIMESTAMP); }
 
 
-  {Guid} { line.append(yytext()); return symbol(Sym.GUID); }
+
+  {Guid} { printRule("ini level"); line.append(yytext()); return symbol(Sym.GUID); }
 
 
-  {Word}(\.{Word})+\:.{5}  {
+  ^{ExceptionClassOrPackagePath}$ {
+         printRule("ini exc by word");
          line.setLength(0);
          line.append(yytext());
          yybegin(EXCEPTION);
      }
 
-  {ClassOrPackagePath} { line.append(yytext()); return symbol(Sym.PATH); }
+   ^{WhiteSpace}+{ExceptionLine} {
+         printRule("ini exc by at");
+         line.setLength(0);
+         line.append(yytext());
+         yybegin(EXCEPTION);
+     }
+
+  {ClassOrPackagePath} { printRule("ini path"); line.append(yytext()); return symbol(Sym.PATH); }
 
 
 
@@ -139,6 +167,7 @@ Guid = [a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{1
 
 
   {LineTerminator} {
+      printRule("ini terminator");
       if (line.length() > 0) {
         line.append(yytext());
         lastLine = line.toString();
@@ -146,16 +175,17 @@ Guid = [a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{1
             }
       }
 
-  {WhiteSpace}                   { line.append(yytext()); }
+  {WhiteSpace}                   { printRule("ini ws"); line.append(yytext()); }
 }
 
 <SENTENCE> {
 
-   {Word} { line.append(yytext()); sentence.append(yytext()); }
+   {Word} { printRule("sen Word"); line.append(yytext()); sentence.append(yytext()); }
 
-   ({MiddleOfSentenceSeparator} | [ \t\f])+ { line.append(yytext()); sentence.append(yytext()); }
+   ({MiddleOfSentenceSeparator} | [ \t\f])+ { printRule("sen middle"); line.append(yytext()); sentence.append(yytext()); }
 
     {LineTerminator} {
+            printRule("sen eol");
             lastLine = line.toString();
             line.setLength(0);
             yypushback(yytext().length());
@@ -166,6 +196,7 @@ Guid = [a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{1
 
    [^]
    ({EndOfSentenceSeparator})? {
+       printRule("sen else, endofsentence");
             // don't append here to line, is pushed back. Otherwise double append would happen!!!
             yybegin(YYINITIAL);
             yypushback(yytext().length());
@@ -176,5 +207,6 @@ Guid = [a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{1
 
 /* error fallback */
 [^]                              {
+    printRule("ini else ");
     line.append(yytext());
 }

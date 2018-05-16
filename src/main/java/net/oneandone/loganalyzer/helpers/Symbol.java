@@ -8,7 +8,6 @@ import java.security.NoSuchAlgorithmException;
 public class Symbol {
     private final Sym s;
     private final int line;
-    private final int column;
     private final String text;
 
 
@@ -21,10 +20,9 @@ public class Symbol {
         HEX_INTEGER_LITERAL
     }
 
-    public Symbol(Sym s, int line, int column, String text) {
+    public Symbol(Sym s, int line, String text) {
         this.s = s;
         this.line = line;
-        this.column = column;
         this.text = text;
     }
 
@@ -34,10 +32,6 @@ public class Symbol {
 
     public int getLine() {
         return line;
-    }
-
-    public int getColumn() {
-        return column;
     }
 
     public String getText() {
@@ -58,7 +52,6 @@ public class Symbol {
         return "Symbol{" +
                "s=" + s +
                ", line=" + line +
-               ", column=" + column +
                 ", hash=" + hash() +
                 ", text='" + text + '\'' +
                '}';
