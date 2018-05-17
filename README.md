@@ -2,7 +2,7 @@
 Method to filter logs so that only the currently important new content is shown
 
 
-## Show only not yet known messages
+## Show only messages not yet known 
 
 * Messages are new
 * The Level of a message is changed
