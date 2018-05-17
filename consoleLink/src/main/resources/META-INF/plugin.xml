@@ -1,4 +1,4 @@
-<idea-plugin version="2">
+<idea-plugin>
   <name>uri to link plugin</name>
   <description><![CDATA[
     The output to the console as a hyperlink URL. browser will open when click on the link.
@@ -20,5 +20,6 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <consoleFilterProvider implementation="siosio.ConsoleLinkFilterProvider" order="last" />
+    <consoleInputFilterProvider implementation="siosio.ConsoleInputFilterProviderImpl" />
   </extensions>
 </idea-plugin>

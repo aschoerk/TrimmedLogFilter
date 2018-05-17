@@ -1,0 +1,27 @@
+<idea-plugin>
+  <name>Learning Console Filter</name>
+  <description><![CDATA[
+    User can reduce console output based on content from earlier outputs.
+    ]]>
+  </description>
+  <change-notes>
+    <![CDATA[
+    <p>0.1</p>
+    initial version /.
+    <br/>
+    ]]>
+  </change-notes>
+  <version>0.7</version>
+  <vendor>siosio</vendor>
+  <!--idea-version since-build="181.4892"/-->
+  <depends>com.intellij.modules.lang</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <consoleInputFilterProvider implementation="net.oneandone.logfilter.LearningConsoleInputFilterProvider" order="last" />
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>

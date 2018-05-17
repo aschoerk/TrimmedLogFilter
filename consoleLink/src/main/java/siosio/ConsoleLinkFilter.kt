@@ -2,6 +2,7 @@ package siosio
 
 import com.intellij.execution.filters.*
 import com.intellij.execution.filters.Filter.Result
+import com.intellij.execution.impl.ConsoleInputListener
 import com.intellij.ide.browsers.*
 
 class ConsoleLinkFilter : Filter {
@@ -18,6 +19,11 @@ class ConsoleLinkFilter : Filter {
         }
       }.toList()
     }.flatten()
+    ConsoleInputListener {  }
+    /* if (result.size == 0) {
+      val tmp = listOf(Result(startPoint, if (endPoint > startPoint+10) endPoint - 10 else startPoint, null));
+      return Result(tmp);
+    }*/
     return Result(result)
   }
 
